@@ -148,6 +148,7 @@ export const ContentSimulate = styled.div`
 
     @media (min-width: 1440px) {
         display: flex;
+        justify-content: center;
         gap: 60px;
     }
 `

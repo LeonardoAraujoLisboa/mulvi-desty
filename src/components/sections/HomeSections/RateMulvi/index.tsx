@@ -48,7 +48,6 @@ const RateMulvi = () => {
           </SimulationData>
           <SimulationResults>
             <TitleResults className='title'>Você recebe:</TitleResults>
-            <TitleResults className='title-mobile'>Taxas</TitleResults>
             <ContainerResults>
               <ContentFlag>
                 <OptionTitle>No débito</OptionTitle>

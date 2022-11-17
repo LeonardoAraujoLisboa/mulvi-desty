@@ -98,11 +98,86 @@
     }
 
     .menu-open {
+        display: grid;
         background-color: $text_link;
         border-radius: 0px 0px 32px 32px;
         height: 80vh;
         position: absolute;
         z-index: 1000;
+
+        .menu-icon {
+            text-align: right;
+            position: relative;
+            top: 290px;
+
+            svg {
+                width: auto;
+                height: 313.6px;
+            }
+        }
+
+        .navbar-brand > svg {
+            display: none;
+        }
+
+        .navbar-toggler {
+            margin-right: 10px;
+            margin-top: 10px;
+            z-index: 100;
+            .navbar-toggler-icon {
+                content: url('../../assets/close-menu.svg');
+                width: 24px;
+                height: 24px;
+            }
+        }
+
+        .me-auto.navbar-nav {
+            display: grid;
+            text-align: center;
+            padding-left: 51px;
+            position: relative;
+            top: -400px;
+
+            .nav-item {
+                z-index: 1000;
+                .nav-link {
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 34px;
+                    padding: 0px;
+                    color: #fff;
+                    margin-bottom: 0px;
+                }
+            }
+
+            .be-mulvi {
+                width: fit-content;
+                margin: auto;
+                grid-row: 9;
+                margin-top: 0px;
+                .nav-link {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+            }
+
+            .my-account {
+                margin-top: 24px;
+                width: fit-content;
+                margin: auto;
+                margin-bottom: 16px;
+                margin-top: 16px;
+                .nav-link {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 22px;
+                    padding: 16px 45.5px;
+                    border: 1px solid #fff;
+                    border-radius: 40px;
+                }
+            }
+        }
     }
 }
 

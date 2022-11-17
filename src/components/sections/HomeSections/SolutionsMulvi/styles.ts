@@ -10,15 +10,16 @@ export const Container = styled.div`
     }
 
     @media (min-width: 1440px) {
-        margin-top: 199px; 
+        margin-top: 80px; 
     }
 `
 
 export const FirstContainer = styled.div`
     @media (min-width: 1440px) {
-        display: flex;
-        padding-right: 64.5px;
-        gap: 61.5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* padding-right: 64.5px;
+        gap: 61.5px; */
     }
 `
 
@@ -41,6 +42,13 @@ export const ContentImg = styled.div`
             margin-top: -15px;
         }
     }
+
+    @media (min-width: 1440px) {
+        &.bg-machine {
+            grid-column: 2;
+            margin-top: 0px;
+        }
+    }
 `
 
 export const SingleSolutionsImg = styled.img`
@@ -58,23 +66,27 @@ export const SingleSolutionsImg = styled.img`
         &.business-bg {
             width: 100%;
         }
+
+        &.machine-bg {
+            width: auto;
+        }
     }
 
     @media (min-width: 1440px) {
         &.business-bg {
-            width: 720px;
+            width: 100%;
         }
 
         &.machine-bg {
-            width: 720px;
+            width: 100%;
         }
     }
 `
 
 export const ContentSolution = styled.div`
     @media (min-width: 375px) {
-        padding-left: 25px;
-        padding-right: 26px;
+        padding-left: 16px;
+        padding-right: 16px;
 
         .btn-mulvi {
             margin-top: 24px;
@@ -91,12 +103,26 @@ export const ContentSolution = styled.div`
 
         .btn-mulvi {
             margin-bottom: 80px;
+            padding-left: 40px;
+        }
+
+        .machine-characteristics {
+            padding-left: 40px;
         }
     }
 
     @media (min-width: 1440px) {
+        padding-left: 0px;
+        padding-right: 0px;
+
         .machine-characteristics {
             padding-bottom: 121px;
+            padding-left: 63px;
+        }
+
+        .btn-mulvi {
+            margin-bottom: 0px;
+            padding-left: 63px;
         }
     }
 `
@@ -125,27 +151,45 @@ export const Title = styled.h1`
 
     @media (min-width: 1024px) {
         &.first-title {
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 47px;
             max-width: 790px;
             padding-bottom: 48px;
             padding-top: 48px;
+            padding-left: 40px;
         }
 
         &.second-title {
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 47px;
             max-width: 890px;
             padding-top: 48px;
             padding-bottom: 40px;
+            padding-left: 40px;
         }
     }
 
     @media (min-width: 1440px) {
         &.first-title {
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 47px;
             padding-top: 111px;
             padding-bottom: 48px;
+            padding-left: 63px;
+            max-width: 580px;
         }
 
         &.second-title {
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 47px;
             padding-top: 127px;
             padding-bottom: 40px;
+            max-width: 580px;
+            padding-left: 63px;
         }
     }
 `
@@ -164,6 +208,7 @@ export const SolutionText = styled.p`
         font-weight: 400;
         font-size: 16px;
         line-height: 23px;
+        padding-left: 40px;
     }
 
     @media (min-width: 1440px) {
@@ -171,23 +216,32 @@ export const SolutionText = styled.p`
         font-weight: 400;
         font-size: 16px;
         line-height: 23px;
+        padding-left: 63px;
+        max-width: 650px;
     }
 `
 
 export const ContainerBenefitsSolutions  = styled.div`
     @media (min-width: 1024px) {
         display: flex;
+        justify-content: flex-start;
         margin-bottom: 44px;
+
+        &.container-benefits-first {
+            gap: 36px;
+            padding-left: 40px;
+        }
 
         &.container-benefits-second {
             gap: 161px;
             margin-bottom: 48px;
+            padding-left: 40px;
         }
     }
 
     @media (min-width: 1440px) {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
 
         &.container-benefits-first {
             margin-bottom: 48px;
@@ -195,6 +249,7 @@ export const ContainerBenefitsSolutions  = styled.div`
 
         &.container-benefits-second {
             margin-bottom: 58px;
+            gap: 40px;
         }
     }
 `
@@ -336,7 +391,7 @@ export const FirstContent  = styled.div`
                 .container-benefitisSolutions:nth-child(1) {
                 align-items: flex-start;
                 max-width: 250px;
-                margin-bottom: 15px;
+                margin-bottom: 40px;
                 img {
                     margin-right: 16px;
                 }
@@ -347,6 +402,7 @@ export const FirstContent  = styled.div`
                 margin-bottom: 26px;
                 img {
                     margin-right: 25px;
+                    margin-top: 7px;
                 }
             }
 
@@ -355,6 +411,7 @@ export const FirstContent  = styled.div`
                 margin-bottom: 40px;
                 img {
                     margin-right: 20px;
+                    margin-bottom: 0px;
                 }
             }
             
@@ -363,6 +420,7 @@ export const FirstContent  = styled.div`
                 margin-bottom: 40px;
                 img {
                     margin-right: 23px;
+                    margin-bottom: 0px;
                 }
             }
 
@@ -531,9 +589,10 @@ export const SecondContent = styled.div`
 
             .container-benefitisSolutions:nth-child(2) {
                 align-items: center;
-                margin-bottom: 45px;
+                margin-bottom: 40px;
                 img {
                     margin-right: 20px;
+                    margin-top: 0px;
                 }
             }
 
@@ -576,6 +635,7 @@ export const SecondContent = styled.div`
 export const SecondContainer = styled.div`
     @media (min-width: 375px) {
         display: grid;
+        margin-bottom: 40px;
     }
 
     @media (min-width: 1024px) {
@@ -583,8 +643,8 @@ export const SecondContainer = styled.div`
     }
 
     @media (min-width: 1440px) {
-        display: flex;
-        padding-left: 64.5px;
-        gap: 61.5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 0px;
     }
 `

@@ -18,8 +18,6 @@ export const FirstContainer = styled.div`
     @media (min-width: 1440px) {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        /* padding-right: 64.5px;
-        gap: 61.5px; */
     }
 `
 

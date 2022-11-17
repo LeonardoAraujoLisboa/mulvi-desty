@@ -43,7 +43,6 @@ const SolutionsMulvi = () => {
             </ContentSolution>
             <ContentImg className='bg-machine'>
                 <SingleSolutionsImg src={Machine} alt='soluções únicas' className='machine-bg' />
-                {/* <SingleSolutionsImg src={Machine} alt='soluções únicas' className='machine-bg-mobile' /> */}
             </ContentImg>
         </SecondContainer>
     </Container>
