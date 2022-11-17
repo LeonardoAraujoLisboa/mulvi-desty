@@ -1,0 +1,208 @@
+@import "../../styles/theme";
+
+.me-auto.navbar-nav {
+    @media (min-width: 1440px) {
+        align-items: center;
+        margin-right: 0px !important;
+        justify-content: end !important;
+    }
+}
+
+.navbar-collapse {
+    @media (min-width: 1440px) {
+        justify-content: flex-start !important;
+    }
+}
+
+.navbar {
+    @media (min-width: 1440px) {
+        padding-top: 31px;
+        padding-bottom: 34px;
+    }
+    
+    .container-fluid {
+        padding-left: 0px;
+        padding-right: 0px;
+        gap: 76px !important;
+
+        .navbar-brand {
+            padding: 0px;
+            margin-right: 0px;
+        }
+    }
+}
+
+.nav-link, .nav-link:hover {
+    color: $text_menu;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    @media (min-width: 1440px) {
+        padding-left: 0px !important;
+        padding-right: 24px !important;
+        width: max-content;
+    }
+}
+
+.whoWeAre {
+    @media (min-width: 1440px) {
+        .nav-link {
+            padding-right: 0px !important;
+        }
+    }  
+}
+
+.my-account {
+    @media (min-width: 1440px) {
+        padding-left: 76px;
+
+        .nav-link {
+            padding-right: 32px !important;
+        }
+    }
+}
+
+.be-mulvi {
+    .nav-link {
+        padding: 16px 32px !important;
+        background-color: $text_menu;
+        color: #fff;
+        border-radius: 40px;
+    }
+}
+
+.menu-close {
+    .navbar-toggler-icon {
+        content: url('../../assets/menu-hamburguer.svg');
+    }
+}
+
+.navbar-toggler {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-toggler:focus {
+    border: none;
+    box-shadow: none;
+}
+
+@media (min-width: 375px) {
+    .menu-close {
+        padding-left: 17px;
+        padding-right: 17px;
+        padding-top: 55.7px;
+        padding-bottom: 55.7px;
+    }
+
+    .menu-open {
+        background-color: $text_link;
+        border-radius: 0px 0px 32px 32px;
+        height: 80vh;
+        position: absolute;
+        z-index: 1000;
+    }
+}
+
+@media (min-width: 1024px) {
+    .menu-close {
+        padding: 32px 40px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1439px) {
+    .menu-open {
+        background-color: $text_link;
+        position: absolute;
+        padding-bottom: 0px;
+        height: 896px;
+        z-index: 1000;
+        width: 100%;
+        border-radius: 0px 0px 48px 48px;
+
+        .menu-icon {
+            text-align: right;
+            position: relative;
+            top: 561px;
+
+            svg {
+                width: auto;
+                height: 553.99px;
+            }
+        }
+
+        .navbar-brand > svg {
+            display: none;
+        }
+
+        .container-fluid {
+            align-items: center;
+            gap: 60px !important;
+        }
+
+        .navbar-toggler {
+            margin-right: 10px;
+            margin-top: 10px;
+            z-index: 100;
+            .navbar-toggler-icon {
+                content: url('../../assets/close-menu.svg');
+                width: 24px;
+                height: 24px;
+            }
+        }
+
+        .me-auto.navbar-nav {
+            display: grid;
+            text-align: center;
+            position: relative;
+            top: -561px;
+
+            .nav-item {
+                z-index: 1000;
+                .nav-link {
+                    font-weight: 400;
+                    font-size: 36px;
+                    line-height: 47px;
+                    color: #fff;
+                }
+
+                .nav-link {
+                    margin-bottom: 28px;
+                }
+            }
+
+            .be-mulvi {
+                width: fit-content;
+                margin: auto;
+                grid-row: 8;
+                margin-top: 32px;
+                .nav-link {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+            }
+
+            .my-account {
+                margin-top: 24px;
+                width: fit-content;
+                margin: auto;
+                margin-bottom: 61px;
+                .nav-link {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 22px;
+                    padding: 16px 45.5px;
+                    border: 1px solid #fff;
+                    border-radius: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 375px) {
+
+}
