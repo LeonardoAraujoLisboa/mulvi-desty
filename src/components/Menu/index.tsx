@@ -16,7 +16,6 @@ const Menu = () => {
     useEffect(() => {
     function handleResize() {
         const widthResizing = window.innerWidth
-        console.log(widthResizing);
         
         if (widthResizing <= 1439) {
             setExpand(false)
@@ -40,11 +39,6 @@ const Menu = () => {
             <NavbarToggler onClick={toggle} />
             <Collapse isOpen={isOpen} navbar>
                 <Nav className='me-auto' navbar>
-                    { isOpen && 
-                        <div className='menu-icon'>
-                            <MenuIcon />
-                        </div>
-                    }
                     <NavItem>
                         <NavLink href="#benefits">Vantagens</NavLink>
                     </NavItem>
@@ -84,6 +78,11 @@ const Menu = () => {
                         </NavLink>
                     </NavItem>
                 </Nav>
+                { isOpen && 
+                    <div className='menu-icon'>
+                        <MenuIcon />
+                    </div>
+                }
             </Collapse>
         </Navbar>
     )
