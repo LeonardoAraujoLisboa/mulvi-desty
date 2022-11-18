@@ -9,6 +9,13 @@ export const Container = styled.div`
     @media (min-width: 1024px) {
         margin-top: 80px;
     }
+
+    @media (min-width: 1024px) {
+        padding-left: 0px;
+        padding-right: 0px;
+        display: grid;
+        justify-content: center;
+    }
 `
 
 export const Title = styled.h1`
@@ -182,9 +189,13 @@ export const ContentCards = styled.div`
         display: flex;
         align-items: center;
         flex-wrap: wrap;
+        justify-content: center;
         gap: 32px;
+        padding-left: 0px;
+        padding-right: 0px;
 
         .card {
+            width: 305px;
             .card-text {
                 font-weight: 400;
                 font-size: 24px;
@@ -230,7 +241,7 @@ export const ContentCards = styled.div`
             padding-left: 30px;
             padding-right: 31px;
             padding-top: 25px;
-            justify-content: flex-start !important;
+            justify-content: flex-end !important;
             .card-img-top {
                 width: 77.01px !important;
                 height: 127px !important;

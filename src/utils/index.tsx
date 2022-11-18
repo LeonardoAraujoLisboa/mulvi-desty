@@ -111,7 +111,7 @@ export const ListBenefitsSolutionsFirstSecondGroup = [
     }
 ]
 
-export const ListBenefitsSolutionsSecondFirstGroup = [
+export const ListBenefitsSolutionsSecond = [
     {
         icon: Checked,
         title: 'Débito',
@@ -126,31 +126,8 @@ export const ListBenefitsSolutionsSecondFirstGroup = [
     },
     {
         icon: Checked,
-        title: 'Crédito Parcelado Banco (emissor)',
+        title: 'Vale Alimentação',
     },
-    {
-        icon: Checked,
-        title: 'Crédito Parcelado Cliente',
-    }
-]
-
-export const ListBenefitsSolutionsSecondSecondGroup = [
-    {
-        icon: Checked,
-        title: 'Voucher',
-    },
-    {
-        icon: Checked,
-        title: 'Crediário',
-    },
-    {
-        icon: Checked,
-        title: 'Crediário no Crédito',
-    },
-    {
-        icon: Checked,
-        title: 'Vale Refeição',
-    }
 ]
 
 export const ListMoreContents = [

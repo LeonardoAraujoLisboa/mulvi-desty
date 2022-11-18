@@ -21,6 +21,7 @@ const Menu = () => {
             setExpand(false)
         } else {
             setExpand(true)
+            setIsOpen(false)
         }
       }
 
@@ -32,47 +33,47 @@ const Menu = () => {
     }, [])
 
     return (
-        <Navbar expand={expand} className={`container-web ${isOpen ? 'menu-open' : 'menu-close'}`} >
+        <Navbar expand={expand} className={`container-web ${isOpen ? 'menu-open' : 'menu-close'}`}>
             <NavbarBrand href="/" >
                 <Logo />
             </NavbarBrand>
             <NavbarToggler onClick={toggle} />
             <Collapse isOpen={isOpen} navbar>
                 <Nav className='me-auto' navbar>
-                    <NavItem>
+                    <NavItem onClick={toggle}>
                         <NavLink href="#benefits">Vantagens</NavLink>
                     </NavItem>
-                    <NavItem>
+                    <NavItem onClick={toggle}>
                         <NavLink href="#rate">
                             Taxas
                         </NavLink>
                     </NavItem>
-                    <NavItem>
+                    <NavItem onClick={toggle}>
                         <NavLink href="#solutions">
                             Soluções
                         </NavLink>
                     </NavItem>
-                    <NavItem>
+                    <NavItem onClick={toggle}>
                         <NavLink href="#contents">
                             Conteúdos
                         </NavLink>
                     </NavItem>
-                    <NavItem>
+                    <NavItem onClick={toggle}>
                         <NavLink href="#faq">
                         Perguntas Frequentes
                         </NavLink>
                     </NavItem>
-                    <NavItem className='whoWeAre'>
+                    <NavItem className='whoWeAre' onClick={toggle}>
                         <NavLink href="#whoWeAre">
                         Quem Somos
                         </NavLink>
                     </NavItem>
-                    <NavItem className='my-account'>
+                    <NavItem className='my-account' onClick={toggle}>
                         <NavLink href="#whoWeAre">
                         Minha Conta
                         </NavLink>
                     </NavItem>
-                    <NavItem className='be-mulvi'>
+                    <NavItem className='be-mulvi' onClick={toggle}>
                         <NavLink href="#whoWeAre">
                         Quero ser mulvi
                         </NavLink>

@@ -114,27 +114,38 @@ export const Title = styled.h3`
         font-size: 40px;
         line-height: 54px;
         color: ${({theme}) => theme.colors.text_secundary};
-        max-width: 266px;
+        max-width: inherit;
     }
 `
 
 export const SubTitle = styled.h4`
+
+@media (min-width: 375px) {
+    font-size: 28px;
+    line-height: 38px;
+    max-width: 400px;
+    margin-bottom: 76px;
+    color: ${({theme}) => theme.colors.text_secundary};
+}
+
+@media (min-width: 1024px) {
+    max-width: 379px;
+    margin-bottom: 52px;
     font-weight: 400;
     font-size: 40px;
     line-height: 54px;
-    color: ${({theme}) => theme.colors.text_secundary};
     margin-bottom: 76px;
+    color: ${({theme}) => theme.colors.text_secundary};
     max-width: 457px;
+}
 
-    @media (min-width: 375px) {
-        font-size: 28px;
-        line-height: 38px;
-        max-width: 400px;
-    }
-
-    @media (min-width: 1024px) {
-        max-width: 379px;
-        margin-bottom: 52px;
-    }
+@media (min-width: 1440px) {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 54px;
+    margin-bottom: 76px;
+    color: ${({theme}) => theme.colors.text_secundary};
+    max-width: inherit;
+}
 `
 

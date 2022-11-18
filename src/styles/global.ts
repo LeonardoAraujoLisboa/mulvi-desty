@@ -1,4 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
+import ElizethBold from '../assets/fonts/Elizeth-Bold.otf'
+import ElizethRegular from '../assets/fonts/Elizeth-Regular.otf'
 
 export const GlobalStyles = createGlobalStyle`
     body {
@@ -32,6 +34,18 @@ export const GlobalStyles = createGlobalStyle`
         box-shadow: none;
     }
 
+    @font-face {
+        font-family: 'Elizeth Bold';
+        src: url(${ElizethBold}) format('opentype');
+        font-weight: 700;
+    }
+
+    @font-face {
+        font-family: 'Elizeth Regular';
+        src: url(${ElizethRegular}) format('opentype');
+        font-weight: 400;
+    }
+
     @media (min-width: 375px) {
         .attention-strong {
             font-weight: 700;
@@ -58,6 +72,7 @@ export const GlobalStyles = createGlobalStyle`
 
     @media (min-width: 1024px) {
         .attention-strong {
+            font-family: 'Elizeth Bold', Arial, Helvetica, sans-serif;
             font-weight: 700;
             font-size: 36px;
             line-height: 51.12px;
@@ -73,6 +88,7 @@ export const GlobalStyles = createGlobalStyle`
         }
 
         h1 {
+            font-family: 'Elizeth Regular', Arial, Helvetica, sans-serif;
             font-weight: 400;
             font-size: 36px;
             line-height: 51.12px;
@@ -80,7 +96,8 @@ export const GlobalStyles = createGlobalStyle`
         }
 
         h2 {
-            font-weight: 600;
+            font-family: 'Elizeth Regular', Arial, Helvetica, sans-serif;
+            font-weight: 400;
             font-size: 18px;
             line-height: 25px;
             color: ${({theme}) => theme.colors.text_menu};
@@ -102,6 +119,7 @@ export const GlobalStyles = createGlobalStyle`
         }
 
         h1 {
+            font-family: 'Elizeth Regular', Arial, Helvetica, sans-serif;
             font-weight: 400;
             font-size: 36px;
             line-height: 51.12px;
@@ -109,7 +127,8 @@ export const GlobalStyles = createGlobalStyle`
         }
 
         h2 {
-            font-weight: 600;
+            font-family: 'Elizeth Regular', Arial, Helvetica, sans-serif;
+            font-weight: 400;
             font-size: 18px;
             line-height: 25px;
             color: ${({theme}) => theme.colors.text_menu};
@@ -125,6 +144,7 @@ export const GlobalStyles = createGlobalStyle`
         }
 
         .attention-strong {
+            font-family: 'Elizeth Bold', Arial, Helvetica, sans-serif;
             font-weight: 700;
             font-size: 36px;
             line-height: 51.12px;

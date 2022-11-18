@@ -177,17 +177,18 @@ export const Title = styled.h1`
             padding-top: 111px;
             padding-bottom: 48px;
             padding-left: 63px;
-            max-width: 580px;
+            max-width: inherit;
         }
 
         &.second-title {
             font-weight: 400;
             font-size: 36px;
             line-height: 47px;
-            padding-top: 127px;
+            padding-top: 127px; 
             padding-bottom: 40px;
-            max-width: 580px;
+            max-width: inherit;
             padding-left: 63px;
+            padding-right: 42px;
         }
     }
 `
@@ -215,7 +216,8 @@ export const SolutionText = styled.p`
         font-size: 16px;
         line-height: 23px;
         padding-left: 63px;
-        max-width: 650px;
+        padding-right: 63px;
+        max-width: inherit;
     }
 `
 
@@ -239,15 +241,18 @@ export const ContainerBenefitsSolutions  = styled.div`
 
     @media (min-width: 1440px) {
         display: flex;
-        justify-content: center;
 
         &.container-benefits-first {
             margin-bottom: 48px;
+            justify-content: flex-start;
+            padding-left: 63px;
+            gap: 80px;
         }
 
         &.container-benefits-second {
             margin-bottom: 58px;
-            gap: 40px;
+            padding-left: 63px;
+            justify-content: flex-start;
         }
     }
 `

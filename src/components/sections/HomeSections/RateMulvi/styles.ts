@@ -100,7 +100,7 @@ export const Title = styled.h1`
         text-align: center;
         padding-bottom: 40px;
         margin: 0 auto;
-        max-width: 306px;
+        max-width: inherit;
         font-weight: 400;
         font-size: 36px;
         line-height: 47px;

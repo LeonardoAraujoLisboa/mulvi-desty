@@ -20,6 +20,8 @@ export const Container = styled.div`
         margin-top: 0px;
         padding-top: 187.5px;
         padding-bottom: 187.5px;
+        display: grid;
+        justify-content: center;
     }
 `
 

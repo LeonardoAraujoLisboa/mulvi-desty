@@ -29,8 +29,8 @@
     .menu-close {
         padding-left: 17px;
         padding-right: 17px;
-        padding-top: 55.7px;
-        padding-bottom: 55.7px;
+        padding-top: 30px;
+        padding-bottom: 40px;
     }
 
     .menu-open {
@@ -64,7 +64,7 @@
             z-index: 100;
             position: absolute;
             bottom: 33px;
-            right: 37%;
+            right: 45%;
             .navbar-toggler-icon {
                 content: url('../../assets/close-menu.svg');
                 width: 24px;
@@ -92,12 +92,13 @@
             }
 
             .be-mulvi {
-                width: fit-content;
+                width: 100%;
                 margin: auto;
                 grid-row: 7;
                 margin-top: 20px;
                 margin-bottom: 0px;
                 .nav-link {
+                    text-align: center;
                     font-weight: 400;
                     font-size: 16px;
                     line-height: 22px;
@@ -107,11 +108,12 @@
 
             .my-account {
                 margin-top: 24px;
-                width: fit-content;
+                width: 100%;
                 margin: auto;
                 margin-bottom: 16px;
                 margin-top: 16px;
                 .nav-link {
+                    text-align: center;
                     font-weight: 400;
                     font-size: 16px;
                     line-height: 22px;
@@ -165,8 +167,8 @@
             margin-top: 10px;
             z-index: 100;
             position: absolute;
-            top: 0px;
-            right: 0;
+            bottom: 55px;
+            right: 50%;
             .navbar-toggler-icon {
                 content: url('../../assets/close-menu.svg');
                 width: 24px;

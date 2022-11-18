@@ -9,7 +9,7 @@ import {ReactComponent as AppStore} from '../../../../assets/app-store.svg'
 import BenefitisSolution from '../../../BenefitsSolutions'
 import MulviButton from '../../../MulviButton'
 import MachineCharacteristics from '../../../MachineCharacteristics'
-import { ListBenefitsSolutionsFirstFirstGroup, ListBenefitsSolutionsFirstSecondGroup, ListBenefitsSolutionsSecondFirstGroup, ListBenefitsSolutionsSecondSecondGroup, ListCharacteristics } from '../../../../utils'
+import { ListBenefitsSolutionsFirstFirstGroup, ListBenefitsSolutionsFirstSecondGroup, ListBenefitsSolutionsSecond, ListCharacteristics } from '../../../../utils'
 import Machine from '../../../../assets/machine.png'
 import { Link } from 'react-router-dom'
 
@@ -39,11 +39,8 @@ const SolutionsMulviDesty = () => {
                 <Title className='second-title'>Mais do que uma maquininha, <span className='attention-strong'>somos o parceiro que movimenta o seu negócio.</span></Title>
                 <ContainerBenefitsSolutions className='container-benefits-second'>
                     <FirstContent className='first-content-second'>
-                        <BenefitisSolution data={ListBenefitsSolutionsSecondFirstGroup} />
+                        <BenefitisSolution data={ListBenefitsSolutionsSecond} />
                     </FirstContent>
-                    <SecondContent className='second-content-second'>
-                        <BenefitisSolution data={ListBenefitsSolutionsSecondSecondGroup} />
-                    </SecondContent>
                 </ContainerBenefitsSolutions>
                 <MachineCharacteristics title='Características da maquininha' list={ListCharacteristics} />
             </ContentSolution>
