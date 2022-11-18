@@ -1,6 +1,6 @@
 import React from 'react'
 import { Card, CardBody, CardText, CardTitle } from 'reactstrap'
-import { Container } from './styles';
+import { Container, Title, ContentCard } from './styles';
 
 interface Props {
     data: {
@@ -19,15 +19,18 @@ const BusinessContentCard = ({data}: Props) => {
 
   return (
     <Container>
-        {data.map((item, index) => (
-            <Card key={index} tag={'button'} onClick={handleClick}>
-                <img alt={item.info_icon} src={item.icon} width='100%' />
-                <CardBody>
-                    <CardTitle>{item.title}</CardTitle>
-                    <CardText>{item.text}</CardText>
-                </CardBody>
-            </Card>
-        ))}
+      <Title className='attention-strong'>Conteúdos para seu negócio</Title>
+      <ContentCard>
+            {data.map((item, index) => (
+                <Card key={index} tag={'button'} onClick={handleClick}>
+                    <img alt={item.info_icon} src={item.icon} width='100%' />
+                    <CardBody>
+                        <CardTitle>{item.title}</CardTitle>
+                        <CardText>{item.text}</CardText>
+                    </CardBody>
+                </Card>
+            ))}
+        </ContentCard>
     </Container>
   )
 }

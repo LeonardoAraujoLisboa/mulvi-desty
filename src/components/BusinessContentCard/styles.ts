@@ -1,6 +1,34 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+    
+`
+
+export const Title = styled.h1`
+    @media (min-width: 375px) {
+        padding-bottom: 32px;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    @media (min-width: 1024px) {
+        padding-bottom: 48px;
+        text-align: left;
+        padding-left: 40px;
+        margin-bottom: 0px;
+        text-align: center;
+    width: 893px;
+    }
+
+    @media (min-width: 1440px) {
+        padding-bottom: 43px;
+        text-align: left;
+        padding-left: 65px;
+        margin-bottom: 0px;
+    }
+`
+
+export const ContentCard = styled.div`
     @media (min-width: 375px) {
         padding-left: 13.5px;
         padding-right: 19.5px;
