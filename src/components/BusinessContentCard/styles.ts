@@ -13,7 +13,6 @@ export const Title = styled.h1`
 
     @media (min-width: 1024px) {
         padding-bottom: 48px;
-        text-align: left;
         padding-left: 40px;
         margin-bottom: 0px;
         text-align: center;
