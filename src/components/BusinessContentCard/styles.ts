@@ -18,11 +18,12 @@ export const Title = styled.h1`
         margin-bottom: 0px;
         text-align: center;
         width: 893px;
+        margin: auto;
     }
 
     @media (min-width: 1440px) {
         padding-bottom: 43px;
-        text-align: left;
+        text-align: center;
         padding-left: 65px;
         margin-bottom: 0px;
     }
