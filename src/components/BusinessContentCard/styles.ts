@@ -51,7 +51,6 @@ export const ContentCard = styled.div`
         }
 
         .card {
-            width: 342.03px;
             height: auto;
             box-shadow: 0px 1px 8px 2px rgba(0, 0, 0, 0.25) !important;
             border-radius: 16px !important;
@@ -95,7 +94,6 @@ export const ContentCard = styled.div`
         }
 
         .card {
-            width: 455.5px;
             height: auto;
             box-shadow: 0px 1px 8px 2px rgba(0, 0, 0, 0.25) !important;
             border-radius: 16px !important;
