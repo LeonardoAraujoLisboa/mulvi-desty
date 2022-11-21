@@ -266,6 +266,7 @@ export const SimulationAnotherAccount = styled.div`
         border-radius: 24px;
         padding: 32px;
         height: auto;
+        margin-top: 0px;
         background-color: ${({theme}) => theme.colors.background_another_account};
     }
 
