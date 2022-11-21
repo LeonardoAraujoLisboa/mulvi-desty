@@ -17,7 +17,7 @@ export const Title = styled.h1`
         padding-left: 40px;
         margin-bottom: 0px;
         text-align: center;
-    width: 893px;
+        width: 893px;
     }
 
     @media (min-width: 1440px) {
@@ -29,6 +29,14 @@ export const Title = styled.h1`
 `
 
 export const ContentCard = styled.div`
+    .card {
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        box-shadow: 0px 1px 8px 5px rgba(0, 0, 0, 0.25) !important; 
+    }
+    
     @media (min-width: 375px) {
         padding-left: 13.5px;
         padding-right: 19.5px;
@@ -106,7 +114,6 @@ export const ContentCard = styled.div`
             color: ${({theme}) => theme.colors.text_secundary};
             margin-bottom: 15px;
             text-align: left;
-            width: max-content;
         }
 
         .card-text {

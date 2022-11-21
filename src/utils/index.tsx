@@ -1,14 +1,18 @@
-import PaymentMethods from '../assets/payment-methods.png'
+import Ticket from '../assets/ticket.png'
+import MainMistakes from '../assets/main-mistakes.png'
+import WorkingCapital from '../assets/working-capital.png'
+import Antecipation from '../assets/antecipation.png'
 import Monitoring from '../assets/monitoring.svg'
 import Recharge from '../assets/recharge.svg'
 import Ecommerce from '../assets/e-commerce.svg'
-import Anticipation from '../assets/anticipation.svg'
 import Transactions from '../assets/transactions.svg'
 import AccountDesty from '../assets/account-desty.svg'
 import Whatsapp from '../assets/whatsapp.svg'
 import Food from '../assets/food.svg'
 import PixAndQrCode from '../assets/pix-qr-code.svg'
 import Payment from '../assets/payment.svg'
+import PaymentD1D30 from '../assets/payment-d1-d30.svg'
+import Receivables from '../assets/receivables.svg'
 import Checked from '../assets/checked.svg'
 import MoreContents from '../assets/more-contents.png'
 import MoreContents2 from '../assets/more-contents.png'
@@ -37,52 +41,58 @@ export const ListCharacteristics = [
 
 export const ListBusinessContentCard = [
     {
-        icon: PaymentMethods,
-        info_icon: 'Melhores Formas de pagamento',
-        title: 'As melhores formas de pagamento',
-        text: 'Seja no débito, crédito à vista ou parcelado, você recebe em 1 dia útil após a venda. '
+        icon: Ticket,
+        info_icon: 'Ticket médio',
+        title: 'Ticket médio: saiba como aumentar ele na sua empresa',
+        text: 'O ticket médio indica o valor médio gasto por seus clientes. Mas como aumentar esse valor?'
     },
     {
-        icon: PaymentMethods,
-        info_icon: 'Melhores Formas de pagamento',
-        title: 'As melhores formas de pagamento',
-        text: 'Seja no débito, crédito à vista ou parcelado, você recebe em 1 dia útil após a venda. '
+        icon: MainMistakes,
+        info_icon: 'Principais erros',
+        title: 'Os principais erros de quem inicia um empreendimento',
+        text: 'Será que você está cometendo um destes principais erros do empreendedor iniciante?'
     },
     {
-        icon: PaymentMethods,
-        info_icon: 'Melhores Formas de pagamento',
-        title: 'As melhores formas de pagamento',
-        text: 'Seja no débito, crédito à vista ou parcelado, você recebe em 1 dia útil após a venda. '
+        icon: WorkingCapital,
+        info_icon: 'Capital de giro',
+        title: 'Capital de giro: o que é e qual a sua importância?',
+        text: 'Você sabe o que é e como calcular seu capital de giro? '
     },
     {
-        icon: PaymentMethods,
-        info_icon: 'Melhores Formas de pagamento',
-        title: 'As melhores formas de pagamento',
-        text: 'Seja no débito, crédito à vista ou parcelado, você recebe em 1 dia útil após a venda. '
+        icon: Antecipation,
+        info_icon: 'Antecipação automática?',
+        title: 'O que é antecipação automática?',
+        text: 'Entenda melhor como funciona e quais as vantagens e desvantagens para o negócio!'
     }
 ]
 
 export const ListBenefitsSolutionsFirstFirstGroup = [
     {
         icon: Monitoring,
-        title: 'Monitoramento',
+        title: 'Monitoramento das vendas em tempo real',
+    },
+    {
+        icon: PaymentD1D30,
+        title: 'Pagamento em D+1 ou D+30',
+    },
+    {
+        icon: Receivables,
+        title: 'Antecipação de Recebíveis',
+    },
+    {
+        icon: Payment,
+        title: 'Link de Pagamento',
+        coming_soon: true
+    },
+    {
+        icon: Transactions,
+        title: 'Transações recorrentes',
+        coming_soon: true
     },
     {
         icon: Recharge,
         title: 'Recarga de celular',
         coming_soon: true
-    },
-    {
-        icon: Ecommerce,
-        title: 'Marketplace e E-commerce',
-    },
-    {
-        icon: Anticipation,
-        title: 'Antecipação de Recebíveis 360',
-    },
-    {
-        icon: Transactions,
-        title: 'Transações recorrentes',
     },
 ]
 
@@ -92,12 +102,12 @@ export const ListBenefitsSolutionsFirstSecondGroup = [
         title: 'Conta Digital Desty',
     },
     {
-        icon: Whatsapp,
-        title: 'Whatsapp',
-    },
-    {
         icon: Food,
         title: 'Voucher Alimentação',
+    },
+    {
+        icon: Whatsapp,
+        title: 'Whatsapp',
         coming_soon: true
     },
     {
@@ -106,9 +116,10 @@ export const ListBenefitsSolutionsFirstSecondGroup = [
         coming_soon: true
     },
     {
-        icon: Payment,
-        title: 'Link de Pagamento',
-    }
+        icon: Ecommerce,
+        title: 'Marketplace e E-commerce',
+        coming_soon: true
+    },
 ]
 
 export const ListBenefitsSolutionsSecond = [

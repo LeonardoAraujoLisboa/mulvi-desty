@@ -5,13 +5,11 @@ export const Container = styled.div`
     position: relative;
 
     @media (min-width: 375px) {
-        margin-top: 40px;
         padding-top: 40px;
         padding-bottom: 40px;
     }
 
     @media (min-width: 1024px) {
-        margin-top: 80px;
         padding-top: 80px;
         padding-bottom: 80px;
     }

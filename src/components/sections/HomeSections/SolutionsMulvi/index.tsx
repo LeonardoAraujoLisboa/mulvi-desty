@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, ContentImg, SingleSolutionsImg, ContentSolution, Title, SolutionText, ContainerBenefitsSolutions, FirstContent, SecondContent, FirstContainer, SecondContainer } from './styles'
+import { Container, ContentImg, SingleSolutionsImg, ContentSolution, Title, SolutionText, ContainerBenefitsSolutions, FirstContent, SecondContent, FirstContainer, SecondContainer, ContentRent, RentText } from './styles'
 import SingleSolutions from '../../../../assets/single-solutions.png'
 import BenefitisSolution from '../../../BenefitsSolutions'
 import MulviButton from '../../../MulviButton'
@@ -31,6 +31,9 @@ const SolutionsMulvi = () => {
         <SecondContainer>
             <ContentSolution>
                 <Title className='second-title'>Mais do que uma maquininha, <span className='attention-strong'>somos o parceiro que movimenta o seu negócio.</span></Title>
+                <ContentRent>
+                    <RentText>O aluguel de cada maquininha custa R$ 90,00/mês. Isenção para faturamento mensal acima de R$ 100.000,00.</RentText>
+                </ContentRent>
                 <ContainerBenefitsSolutions className='container-benefits-second'>
                     <FirstContent className='first-content-second'>
                         <BenefitisSolution data={ListBenefitsSolutionsSecond} />

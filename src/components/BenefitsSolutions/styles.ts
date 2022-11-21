@@ -20,7 +20,7 @@ export const Icon = styled.img`
 
 export const Title = styled.h2`
     @media (min-width: 375px) {
-        font-weight: 400;
+        font-weight: 700;
         font-size: 16px;
         line-height: 22px;
 

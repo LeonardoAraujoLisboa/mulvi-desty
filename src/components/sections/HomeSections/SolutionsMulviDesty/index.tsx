@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, ContentImg, SingleSolutionsImg, ContentSolution, Title, SolutionText, ContainerBenefitsSolutions, FirstContent, SecondContent, FirstContainer, SecondContainer, MulviDestyContainer, WrapperImg, MulviDestyImg, ContentLogos, ContentInfoMulviDesty, InfoMulviDestyText, ContentCallBack, CallBackTitle, ContentStore } from './styles'
+import { Container, ContentImg, SingleSolutionsImg, ContentSolution, Title, SolutionText, ContainerBenefitsSolutions, FirstContent, SecondContent, FirstContainer, SecondContainer, MulviDestyContainer, WrapperImg, MulviDestyImg, ContentLogos, ContentInfoMulviDesty, InfoMulviDestyText, ContentCallBack, CallBackTitle, ContentStore, ContentRent, RentText } from './styles'
 import SingleSolutions from '../../../../assets/single-solutions.png'
 import {ReactComponent as MulviPayLogo} from '../../../../assets/mulvi-pay-second.svg'
 import {ReactComponent as DestyLogo} from '../../../../assets/desty.svg'
@@ -22,7 +22,7 @@ const SolutionsMulviDesty = () => {
             </ContentImg>
             <ContentSolution>
                 <Title className='first-title'>Soluções únicas para o <span className='attention-strong'>crescimento do seu negócio</span></Title>
-                <SolutionText>Muito mais que a maquininha Android mais moderna do mercado com as melhores taxas do Brasil. Ou seja, tudo que você precisa para fechar negócios sem perda de tempo e fazer sua empresa decolar.</SolutionText>
+                <SolutionText>Tudo que você precisa para fechar negócios sem perder tempo pra fazer sua empresa decolar.</SolutionText>
                 <ContainerBenefitsSolutions className='container-benefits-first'>
                     <FirstContent className='first-content-first'>
                         <BenefitisSolution data={ListBenefitsSolutionsFirstFirstGroup} />
@@ -37,6 +37,9 @@ const SolutionsMulviDesty = () => {
         <SecondContainer>
             <ContentSolution>
                 <Title className='second-title'>Mais do que uma maquininha, <span className='attention-strong'>somos o parceiro que movimenta o seu negócio.</span></Title>
+                <ContentRent>
+                    <RentText>O aluguel de cada maquininha custa <span className='attention-strong'>R$ 90,00/mês.</span><br></br>Isenção para faturamento mensal acima de <span className='attention-strong'>R$ 100.000,00.</span></RentText>
+                </ContentRent>
                 <ContainerBenefitsSolutions className='container-benefits-second'>
                     <FirstContent className='first-content-second'>
                         <BenefitisSolution data={ListBenefitsSolutionsSecond} />

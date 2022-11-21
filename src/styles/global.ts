@@ -34,6 +34,13 @@ export const GlobalStyles = createGlobalStyle`
         box-shadow: none;
     }
 
+    .btn-mulvi {
+        a:hover {
+            background: ${({theme}) => theme.colors.text_link};
+            color: #fff;
+        }
+    }
+
     @font-face {
         font-family: 'Elizeth Bold';
         src: url(${ElizethBold}) format('opentype');

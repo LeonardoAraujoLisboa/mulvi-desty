@@ -41,30 +41,30 @@ const Menu = () => {
             <Collapse isOpen={isOpen} navbar>
                 <Nav className='me-auto' navbar>
                     <NavItem onClick={toggle}>
-                        <NavLink href="#benefits">Vantagens</NavLink>
+                        <NavLink href="#benefits" className='link-menu'>Vantagens</NavLink>
                     </NavItem>
                     <NavItem onClick={toggle}>
-                        <NavLink href="#rate">
+                        <NavLink href="#rate" className='link-menu'>
                             Taxas
                         </NavLink>
                     </NavItem>
                     <NavItem onClick={toggle}>
-                        <NavLink href="#solutions">
+                        <NavLink href="#solutions" className='link-menu'>
                             Soluções
                         </NavLink>
                     </NavItem>
                     <NavItem onClick={toggle}>
-                        <NavLink href="#contents">
+                        <NavLink href="#contents" className='link-menu'>
                             Conteúdos
                         </NavLink>
                     </NavItem>
                     <NavItem onClick={toggle}>
-                        <NavLink href="#faq">
+                        <NavLink href="#faq" className='link-menu'>
                         Perguntas Frequentes
                         </NavLink>
                     </NavItem>
                     <NavItem className='whoWeAre' onClick={toggle}>
-                        <NavLink href="#whoWeAre">
+                        <NavLink href="#whoWeAre" className='link-menu'>
                         Quem Somos
                         </NavLink>
                     </NavItem>

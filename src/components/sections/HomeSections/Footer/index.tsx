@@ -5,7 +5,6 @@ import {ReactComponent as Instagram} from '../../../../assets/instagram.svg'
 import {ReactComponent as Facebook} from '../../../../assets/facebook.svg'
 import {ReactComponent as LinkedIn} from '../../../../assets/linkedin.svg'
 import {ReactComponent as FooterIcon} from '../../../../assets/footer-icon.svg'
-import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -30,12 +29,12 @@ const Footer = () => {
             <Title className='central-attendance'>Central de Atendimento</Title>
             <ContentContact>
               <ContentLocales>
-                <Contact>Demais localidades:</Contact>
-                <span className='central-contact'>0800 021 7100</span>
-              </ContentLocales>
-              <ContentLocales>
                 <Contact>Capitais e regiões metropolitanas:</Contact>
                 <span className='central-contact'>4002-2360</span>
+              </ContentLocales>
+              <ContentLocales>
+                <Contact>Demais localidades:</Contact>
+                <span className='central-contact'>0800 021 7100</span>
               </ContentLocales>
               <ContentLocales>
                 <Contact>Ouvidoria Mulvi Pay:</Contact>
@@ -46,29 +45,29 @@ const Footer = () => {
           <ContentSocialMedia>
             <Title className='title-talk'>Vem conversar com a gente</Title>
             <ContentMedias>
-              <Link to={'/'}>
+              <a href={'https://www.instagram.com/soumulvi/'} target={'_blank'} rel="noreferrer">
                 <Instagram />
-              </Link>
-              <Link to={'/'}>
+              </a>
+              <a href={'https://www.linkedin.com/company/mulvi/'} target={'_blank'} rel="noreferrer">
                 <Facebook />
-              </Link>
-              <Link to={'/'}>
+              </a>
+              <a href={'https://www.facebook.com/profile.php?id=100084447383790'} target={'_blank'} rel="noreferrer">
                 <LinkedIn />
-              </Link>
+              </a>
             </ContentMedias>
           </ContentSocialMedia>
         </ContainerCentralSocial>
         <ContainerPolitic>
           <ContentPolitic>
-            <PoliticItem>Direitos do Tïtular</PoliticItem>
-            <PoliticItem>Termos de uso</PoliticItem>
-            <PoliticItem>Política de Privacidade</PoliticItem>
-            <PoliticItem>Política de Segurança</PoliticItem>
+            <PoliticItem href='/'>Direitos do Titular</PoliticItem>
+            <PoliticItem href='/'>Termos de uso</PoliticItem>
+            <PoliticItem href='/'>Política de Privacidade</PoliticItem>
+            <PoliticItem href='/'>Política de Segurança</PoliticItem>
           </ContentPolitic>
         </ContainerPolitic>
       </WrapperFooter>
       <ContainerInfoCompany>
-        <TextCompany>Mulvi Solucoes de Pagamento sob n 03.847.413/0001-02, com sede na Cidade de Aracaju, Estado de Sergipe</TextCompany>
+        <TextCompany>Mulvi Instituição de Pagamentos SA sob n 03.847.413/0001-02, com sede na Cidade de Aracaju, Estado de Sergipe</TextCompany>
       </ContainerInfoCompany>
     </Container>
   )

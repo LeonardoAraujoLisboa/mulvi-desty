@@ -111,6 +111,10 @@ export const MenuContainer = styled.div`
 `
 
 export const MenuItem = styled.a`
+    &:hover {
+        color: ${({theme}) => theme.colors.text_link} !important;
+    }
+
     @media (min-width: 1024px) {
         font-weight: 400;
         font-size: 16px;
@@ -233,6 +237,15 @@ export const ContentContact = styled.div`
 export const ContentLocales = styled.div`
     @media (min-width: 375px) {
         margin-bottom: 32px;
+        text-align: center;
+    }
+
+    @media (min-width: 1024px) {
+        text-align: left;
+    }
+
+    @media (min-width: 1440px) {
+        text-align: left;
     }
 `
 
@@ -332,6 +345,10 @@ export const ContentPolitic = styled.div`
     }
 `
 export const PoliticItem = styled.a`
+    &:hover {
+        color: ${({theme}) => theme.colors.text_link} !important;
+    }
+
     @media (min-width: 375px) {
         text-align: center;
         font-weight: 400;

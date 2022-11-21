@@ -16,7 +16,7 @@ const Benefits = () => {
             <BenefitCard text='Aceita todas bandeiras do mercado nacional' icon={Flags} />
             <BenefitCard text='Ferramentas para aumentar a receita do seu negocio' icon={Revenue} />
             <BenefitCard text='Conta digital gratuita no Desty' icon={Account} />
-            <BenefitCard text='Central de atendimento 24hs' icon={Attendance} />
+            <BenefitCard text='Central de atendimento exclusiva' icon={Attendance} />
         </ContentCards>
         <ContentFlags>
             <InfoText>Principais bandeiras do mercado para melhor atender o seu negócio</InfoText>

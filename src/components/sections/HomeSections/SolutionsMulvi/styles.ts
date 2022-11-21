@@ -18,8 +18,6 @@ export const FirstContainer = styled.div`
     @media (min-width: 1440px) {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        /* padding-right: 64.5px;
-        gap: 61.5px; */
     }
 `
 
@@ -105,10 +103,6 @@ export const ContentSolution = styled.div`
             margin-bottom: 80px;
             padding-left: 40px;
         }
-
-        .machine-characteristics {
-            padding-left: 40px;
-        }
     }
 
     @media (min-width: 1440px) {
@@ -127,6 +121,7 @@ export const ContentSolution = styled.div`
     }
 `
 export const Title = styled.h1`
+    margin-bottom: 0px;
     @media (min-width: 375px) {
         &.first-title {
             max-width: 790px;
@@ -167,7 +162,6 @@ export const Title = styled.h1`
             max-width: 890px;
             padding-top: 48px;
             padding-bottom: 40px;
-            padding-left: 40px;
         }
     }
 
@@ -179,17 +173,86 @@ export const Title = styled.h1`
             padding-top: 111px;
             padding-bottom: 48px;
             padding-left: 63px;
-            max-width: 580px;
+            max-width: inherit;
         }
 
         &.second-title {
             font-weight: 400;
             font-size: 36px;
             line-height: 47px;
-            padding-top: 127px;
+            padding-top: 127px; 
             padding-bottom: 40px;
-            max-width: 580px;
+            max-width: inherit;
             padding-left: 63px;
+            padding-right: 42px;
+        }
+    }
+`
+
+export const ContentRent  = styled.div`
+    margin-bottom: 40px;
+    background-color: ${({theme}) => theme.colors.background_primary};
+    border-radius: 16px;
+
+    @media (min-width: 1024px) {
+        margin-left: 0px;
+        width: auto;
+    }
+
+    @media (min-width: 1440px) {
+        margin-left: 63px;
+        width: fit-content;
+    }
+`
+
+export const RentText = styled.p`
+     @media (min-width: 375px) {
+        padding-left: 32px;
+        padding-right: 25px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        margin-bottom: 0px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20.8px;
+        color: ${({theme}) => theme.colors.text_secundary};
+
+        .attention-strong {
+            font-size: 16px;
+            line-height: 20.8px;
+        }
+     }
+
+     @media (min-width: 1024px) {
+        padding-left: 32px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        margin-bottom: 0px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20.8px;
+        color: ${({theme}) => theme.colors.text_secundary};
+
+        .attention-strong {
+            font-size: 16px;
+            line-height: 20.8px;
+        }
+    }
+
+    @media (min-width: 1440px) {
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        margin-bottom: 0px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 23px;
+        color: ${({theme}) => theme.colors.text_secundary};
+
+        .attention-strong {
+            font-size: 18px;
+            line-height: 23px;
         }
     }
 `
@@ -217,7 +280,8 @@ export const SolutionText = styled.p`
         font-size: 16px;
         line-height: 23px;
         padding-left: 63px;
-        max-width: 650px;
+        padding-right: 63px;
+        max-width: inherit;
     }
 `
 
@@ -235,21 +299,23 @@ export const ContainerBenefitsSolutions  = styled.div`
         &.container-benefits-second {
             gap: 161px;
             margin-bottom: 48px;
-            padding-left: 40px;
         }
     }
 
     @media (min-width: 1440px) {
         display: flex;
-        justify-content: center;
 
         &.container-benefits-first {
             margin-bottom: 48px;
+            justify-content: flex-start;
+            padding-left: 63px;
+            gap: 80px;
         }
 
         &.container-benefits-second {
             margin-bottom: 58px;
-            gap: 40px;
+            padding-left: 63px;
+            justify-content: flex-start;
         }
     }
 `
