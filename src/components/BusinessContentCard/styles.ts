@@ -36,6 +36,11 @@ export const ContentCard = styled.div`
     .card:hover {
         box-shadow: 0px 1px 8px 5px rgba(0, 0, 0, 0.25) !important; 
     }
+
+    img {
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+    }
     
     @media (min-width: 375px) {
         padding-left: 13.5px;

@@ -164,8 +164,6 @@ export const ContentCentral = styled.div`
         padding-bottom: 60px;
         margin: 0 auto;
         width: 100%;
-        padding-left: 140px;
-        padding-right: 140px;
     }
 
     @media (min-width: 1440px) {

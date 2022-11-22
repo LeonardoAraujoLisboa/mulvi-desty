@@ -892,7 +892,7 @@ export const ContentLogos = styled.div`
         height: fit-content;
         align-items: center;
         margin-left: 57px;
-        margin-top: 0px;
+        margin-top: 80px;
 
         .attention-strong {
             grid-column: 1/-1;

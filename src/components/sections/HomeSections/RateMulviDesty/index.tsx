@@ -1,10 +1,85 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import { Input, InputGroup, Label } from 'reactstrap'
+import Select, {SingleValue, ActionMeta} from 'react-select'
 import MulviButton from '../../../MulviButton'
 import {Container, ContentWrapper, ContentInformation, Title, InfoText, ContentSimulate, TitleSimulate, SimulationData, WrapperInput, SimulationResults, SimulationAnotherAccount, TitleResults, ContainerResults, ContentFlag, OptionTitle, ValueMoney, ContentRate, TitleRate, ValueRate, ContentOpenDesty, ContentTextDesty, TextDesty} from './styles'
 import {ReactComponent as LogoDesty} from '../../../../assets/desty.svg'
+import { colorStyles } from '../../../../utils'
+
+interface SelectPeriodProps {
+  label: 'Antecipado (em 1 dia)' | 'Receber a cada 30 dias';
+  value: 'Antecipado (em 1 dia)' | 'Receber a cada 30 dias';
+}
+
+interface SelectFlagsProps {
+  label: 'Master Card e Visa' | 'Elo' | 'Amex e Hiper' | 'Banese Card';
+  value: 'Master Card e Visa' | 'Elo' | 'Amex e Hiper' | 'Banese Card';
+}
 
 const RateMulviDesty = () => {
+  const [saleValue, setSaleValue] = useState('R$ 10,00')
+  const [periodValue, setPeriodValue] = useState<SelectPeriodProps>({label: 'Antecipado (em 1 dia)', value: 'Antecipado (em 1 dia)'})
+  const [flagsValue, setFlagsValue] = useState<SelectFlagsProps>({label: 'Master Card e Visa', value: 'Master Card e Visa'})
+
+  const handleChange = (event: any) => {
+    const {value, name} = event.target
+    if (name === 'sale') {
+      setSaleValue(value)
+    }
+  }
+
+  const handleChangeSelectPeriod = (newValue: SingleValue<SelectPeriodProps>, actionMeta: ActionMeta<SelectPeriodProps>) => {
+    setPeriodValue({label: newValue!.label, value: newValue!.value})
+  }
+
+  const handleChangeSelectFlags = (newValue: SingleValue<SelectFlagsProps>, actionMeta: ActionMeta<SelectFlagsProps>) => {
+    setFlagsValue({label: newValue!.label, value: newValue!.value})
+  }
+
+  const showOptions = () => {
+    if (periodValue.label === 'Antecipado (em 1 dia)') {
+      const options: SelectFlagsProps[] = [
+        {
+          label: 'Master Card e Visa',
+          value: 'Master Card e Visa'
+        },
+        {
+          label: 'Elo',
+          value: 'Elo'
+        },
+        {
+          label: 'Amex e Hiper',
+          value: 'Amex e Hiper'
+        },
+      ]
+      return options
+    } else {
+      const options: SelectFlagsProps[] = [
+        {
+          label: 'Master Card e Visa',
+          value: 'Master Card e Visa'
+        },
+        {
+          label: 'Elo',
+          value: 'Elo'
+        },
+        {
+          label: 'Amex e Hiper',
+          value: 'Amex e Hiper'
+        },
+        {
+          label: 'Banese Card',
+          value: 'Banese Card'
+        },
+      ]
+      return options
+    }
+  }
+
+  useEffect(() => {
+    showOptions()
+  }, [periodValue])
+
   return (
     <Container id='rate'>
       <ContentInformation>
@@ -19,31 +94,17 @@ const RateMulviDesty = () => {
             <WrapperInput>
               <Label>Digite o valor da sua venda</Label>
               <InputGroup>
-                <Input />
+                <Input value={saleValue} onChange={handleChange} name='sale' />
               </InputGroup>
             </WrapperInput>
             <WrapperInput>
               <Label>Prazo de Recebimento</Label>
-              <InputGroup>
-              <Input type="select">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </Input>
-              </InputGroup>
+              <Select styles={colorStyles} options={[{label: 'Antecipado (em 1 dia)', value: 'Antecipado (em 1 dia)'}, {label: 'Receber a cada 30 dias', value: 'Receber a cada 30 dias'}]} onChange={handleChangeSelectPeriod} defaultValue={periodValue} placeholder='Selecione...' />
             </WrapperInput>
             <WrapperInput className='card-flags'>
               <Label>Bandeiras do Cartão</Label>
               <InputGroup>
-              <Input type="select">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </Input>
+              <Select styles={colorStyles} options={showOptions()} onChange={handleChangeSelectFlags} defaultValue={flagsValue} placeholder='Selecione...' />
               </InputGroup>
             </WrapperInput>
           </SimulationData>

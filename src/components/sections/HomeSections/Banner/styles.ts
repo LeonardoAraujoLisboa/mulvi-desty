@@ -74,8 +74,9 @@ export const ContentText = styled.div`
     }
 
     @media (min-width: 1024px) {
-        top: 62px;
+        top: 42px;
         left: 80px;
+        max-width: 375px;
 
         .btn-mulvi {
             display: block;
@@ -85,6 +86,7 @@ export const ContentText = styled.div`
     @media (min-width: 1440px) {
         top: 153px;
         left: 110px;
+        max-width: 466px;
 
         .btn-mulvi {
             display: block;
@@ -134,7 +136,6 @@ export const SubTitle = styled.h4`
     font-weight: 400;
     font-size: 40px;
     line-height: 54px;
-    margin-bottom: 76px;
     color: ${({theme}) => theme.colors.text_secundary};
     max-width: 457px;
 }

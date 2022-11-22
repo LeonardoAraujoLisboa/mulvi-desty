@@ -142,7 +142,7 @@ export const ContentCards = styled.div`
             }
 
             .card-text {
-                max-width: 150px;
+                max-width: 200px;
                 padding-top: 10px;
             }
         }
@@ -155,7 +155,7 @@ export const ContentCards = styled.div`
             }
 
             .card-text {
-                max-width: 150px;
+                max-width: 240px;
                 padding-top: 10px;
             }
         } 
@@ -179,7 +179,7 @@ export const ContentCards = styled.div`
             }
 
             .card-text {
-                max-width: 150px;
+                max-width: 230px;
                 padding-top: 10px;
             }
         }
@@ -212,42 +212,51 @@ export const ContentCards = styled.div`
             }
 
             .card-text {
+                max-width: 200px;
                 padding-top: 21px;
             }
         }
 
         .card:nth-child(2) {
-            padding-left: 30px;
-            padding-right: 31px;
-        }
+            padding-left: 0px;
+            padding-right: 0px;
+            justify-content: center;
 
-        .card:nth-child(2), .card:nth-child(4) {
             .card-img-top {
-                width: 97.28px !important;
-                height: 96px !important;
+                width: 180px !important;
+                height: 88.5px !important;
             }
 
             .card-text {
-                padding-top: 32px;
+                max-width: 240px;
+                padding-top: 10px;
             }
-        } 
+        }
 
         .card:nth-child(4) {
-            padding-left: 26px;
-            padding-right: 35px;
+            padding: 0px;
+            padding-bottom: 20px;
+
+            .card-img-top {
+                width: 88.54px;
+                height: 118px;
+            }
+
+            .card-text {
+                padding-top: 11px;
+            }
         }
 
         .card:nth-child(3) {
-            padding-left: 30px;
-            padding-right: 31px;
-            padding-top: 25px;
-            justify-content: flex-end !important;
+            justify-content: center !important;
+            padding-bottom: 100px;
             .card-img-top {
-                width: 77.01px !important;
-                height: 127px !important;
+                width: 92.75px !important;
+                height: 118px !important;
             }
 
             .card-text {
+                max-width: 230px;
                 padding-top: 16px;
             }
         }
