@@ -4,10 +4,10 @@ import { Container, ContentPage, ContentTitle, PageTitle, Title, Subtitle, Wrapp
 import BannerContent from '../../assets/banner-contents.png'
 import SecondBanner from '../../assets/banner-contents2.png'
 import ContentCard from '../../components/ContentCard'
-import { ListMoreContents } from '../../utils'
+import { ListMoreContents } from '../../utils/lists'
 import Footer from '../../components/sections/HomeSections/Footer'
 
-const Contents = () => {
+const WorkingCapital = () => {
   return (
     <Container>
       <Menu />
@@ -43,4 +43,4 @@ const Contents = () => {
   )
 }
 
-export default Contents
+export default WorkingCapital

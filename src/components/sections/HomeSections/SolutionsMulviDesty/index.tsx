@@ -9,7 +9,7 @@ import {ReactComponent as AppStore} from '../../../../assets/app-store.svg'
 import BenefitisSolution from '../../../BenefitsSolutions'
 import MulviButton from '../../../MulviButton'
 import MachineCharacteristics from '../../../MachineCharacteristics'
-import { ListBenefitsSolutionsFirstFirstGroup, ListBenefitsSolutionsFirstSecondGroup, ListBenefitsSolutionsSecond, ListCharacteristics } from '../../../../utils'
+import { ListBenefitsSolutionsFirstFirstGroup, ListBenefitsSolutionsFirstSecondGroup, ListBenefitsSolutionsSecond, ListCharacteristics } from '../../../../utils/lists'
 import Machine from '../../../../assets/machine.png'
 import { Link } from 'react-router-dom'
 

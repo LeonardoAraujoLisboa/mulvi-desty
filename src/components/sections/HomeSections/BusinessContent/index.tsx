@@ -1,5 +1,5 @@
 import React from 'react'
-import { ListBusinessContentCard } from '../../../../utils'
+import { ListBusinessContentCard } from '../../../../utils/lists'
 import BusinessContentCard from '../../../BusinessContentCard'
 import { Container, Icon } from './styles'
 import MulviIcon from '../../../../assets/mulvi-icon.svg'

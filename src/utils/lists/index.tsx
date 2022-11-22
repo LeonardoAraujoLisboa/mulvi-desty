@@ -1,22 +1,22 @@
-import Ticket from '../assets/ticket.png'
-import MainMistakes from '../assets/main-mistakes.png'
-import WorkingCapital from '../assets/working-capital.png'
-import Antecipation from '../assets/antecipation.png'
-import Monitoring from '../assets/monitoring.svg'
-import Recharge from '../assets/recharge.svg'
-import Ecommerce from '../assets/e-commerce.svg'
-import Transactions from '../assets/transactions.svg'
-import AccountDesty from '../assets/account-desty.svg'
-import Whatsapp from '../assets/whatsapp.svg'
-import Food from '../assets/food.svg'
-import PixAndQrCode from '../assets/pix-qr-code.svg'
-import Payment from '../assets/payment.svg'
-import PaymentD1D30 from '../assets/payment-d1-d30.svg'
-import Receivables from '../assets/receivables.svg'
-import Checked from '../assets/checked.svg'
-import MoreContents from '../assets/more-contents.png'
-import MoreContents2 from '../assets/more-contents.png'
-import MoreContents3 from '../assets/more-contents.png'
+import Ticket from '../../assets/ticket.png'
+import MainMistakes from '../../assets/main-mistakes.png'
+import WorkingCapital from '../../assets/working-capital.png'
+import Antecipation from '../../assets/antecipation.png'
+import Monitoring from '../../assets/monitoring.svg'
+import Recharge from '../../assets/recharge.svg'
+import Ecommerce from '../../assets/e-commerce.svg'
+import Transactions from '../../assets/transactions.svg'
+import AccountDesty from '../../assets/account-desty.svg'
+import Whatsapp from '../../assets/whatsapp.svg'
+import Food from '../../assets/food.svg'
+import PixAndQrCode from '../../assets/pix-qr-code.svg'
+import Payment from '../../assets/payment.svg'
+import PaymentD1D30 from '../../assets/payment-d1-d30.svg'
+import Receivables from '../../assets/receivables.svg'
+import Checked from '../../assets/checked.svg'
+import MoreContents from '../../assets/more-contents.png'
+import MoreContents2 from '../../assets/more-contents.png'
+import MoreContents3 from '../../assets/more-contents.png'
 
 export const ListCharacteristics = [
     {
@@ -44,25 +44,29 @@ export const ListBusinessContentCard = [
         icon: Ticket,
         info_icon: 'Ticket médio',
         title: 'Ticket médio: saiba como aumentar ele na sua empresa',
-        text: 'O ticket médio indica o valor médio gasto por seus clientes. Mas como aumentar esse valor?'
+        text: 'O ticket médio indica o valor médio gasto por seus clientes. Mas como aumentar esse valor?',
+        link: 'medium-ticket'
     },
     {
         icon: MainMistakes,
         info_icon: 'Principais erros',
         title: 'Os principais erros de quem inicia um empreendimento',
-        text: 'Será que você está cometendo um destes principais erros do empreendedor iniciante?'
+        text: 'Será que você está cometendo um destes principais erros do empreendedor iniciante?',
+        link: 'main-mistakes'
     },
     {
         icon: WorkingCapital,
         info_icon: 'Capital de giro',
         title: 'Capital de giro: o que é e qual a sua importância?',
-        text: 'Você sabe o que é e como calcular seu capital de giro? '
+        text: 'Você sabe o que é e como calcular seu capital de giro?',
+        link: 'working-capital'
     },
     {
         icon: Antecipation,
         info_icon: 'Antecipação automática?',
         title: 'O que é antecipação automática?',
-        text: 'Entenda melhor como funciona e quais as vantagens e desvantagens para o negócio!'
+        text: 'Entenda melhor como funciona e quais as vantagens e desvantagens para o negócio!',
+        link: 'antecipation'
     }
 ]
 
@@ -158,34 +162,3 @@ export const ListMoreContents = [
         date: 'Out 19,2022'
     }
 ]
-
-export const colorStyles: any = {
-    control: (styles: Object, {isFocused}: any) => ({
-      ...styles,
-      backgroundColor: '#fff',
-      height: '48px',
-      width: '250px',
-      border: '1px solid #A5AAB4',
-      outline: isFocused === true && '1px solid #A5AAB4',
-      '&:hover': {
-        border: '1px solid #A5AAB4'
-      },
-      borderRadius: '12px',
-    }),
-    singleValue: (styles: Object) => ({
-      ...styles,
-      color: '#141923'
-    }),
-    menu: (styles: Object) => ({
-      ...styles,
-      backgroundColor: '#fff'
-    }),
-    dropdownIndicator: (styles: Object) => ({
-      ...styles,
-      color: '#46505A'
-    }),
-    indicatorSeparator: (styles: Object) => ({
-      ...styles,
-      display: 'none'
-    }),
-}

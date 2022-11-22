@@ -4,7 +4,7 @@ import SingleSolutions from '../../../../assets/single-solutions.png'
 import BenefitisSolution from '../../../BenefitsSolutions'
 import MulviButton from '../../../MulviButton'
 import MachineCharacteristics from '../../../MachineCharacteristics'
-import { ListBenefitsSolutionsFirstFirstGroup, ListBenefitsSolutionsFirstSecondGroup, ListBenefitsSolutionsSecond, ListCharacteristics } from '../../../../utils'
+import { ListBenefitsSolutionsFirstFirstGroup, ListBenefitsSolutionsFirstSecondGroup, ListBenefitsSolutionsSecond, ListCharacteristics } from '../../../../utils/lists'
 import Machine from '../../../../assets/machine.png'
 
 const SolutionsMulvi = () => {

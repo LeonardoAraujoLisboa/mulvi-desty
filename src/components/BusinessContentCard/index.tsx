@@ -8,13 +8,14 @@ interface Props {
         info_icon: string;
         title: string;
         text: string;
+        link: string;
     }[]
 }
 
 const BusinessContentCard = ({data}: Props) => {
 
-    const handleClick = () => {
-        window.location.href = '/contents'
+    const handleClick = (link: string) => {
+        window.location.href = `/${link}`
     }
 
   return (
@@ -22,7 +23,7 @@ const BusinessContentCard = ({data}: Props) => {
       <Title className='attention-strong'>Conteúdos para seu negócio</Title>
       <ContentCard>
             {data.map((item, index) => (
-                <Card key={index} tag={'button'} onClick={handleClick}>
+                <Card key={index} tag={'button'} onClick={() => handleClick(item.link)}>
                     <img alt={item.info_icon} src={item.icon} width='100%' />
                     <CardBody>
                         <CardTitle>{item.title}</CardTitle>
