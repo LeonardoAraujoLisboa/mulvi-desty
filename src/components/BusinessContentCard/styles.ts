@@ -13,11 +13,26 @@ export const Title = styled.h1`
 
     @media (min-width: 1024px) {
         padding-bottom: 48px;
-        padding-left: 125px;
+        padding-left: 190px;
         margin-bottom: 0px;
         text-align: left;
         width: 893px;
-        margin: auto;
+    }
+
+    @media (min-width: 1100px) {
+        padding-left: 60px;
+    }
+
+    @media (min-width: 1200px) {
+        padding-left: 120px;
+    }
+
+    @media (min-width: 1300px) {
+        padding-left: 180px;
+    }
+
+    @media (min-width: 1400px) {
+        padding-left: 55px;
     }
 
     @media (min-width: 1440px) {
