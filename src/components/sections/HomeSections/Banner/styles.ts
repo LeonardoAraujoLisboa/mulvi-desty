@@ -106,7 +106,7 @@ export const SubTitle = styled.h4`
     font-size: 28px;
     line-height: 38px;
     max-width: 400px;
-    margin-bottom: 76px;
+    margin-bottom: 40px;
     color: ${({theme}) => theme.colors.text_secundary};
 }
 
