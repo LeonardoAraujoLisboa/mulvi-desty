@@ -37,7 +37,7 @@ const SolutionsMulviDesty = () => {
             <ContentSolution>
                 <Title className='second-title'>Mais do que uma maquininha, <span className='attention-strong'>somos o parceiro que movimenta o seu negócio.</span></Title>
                 <ContentRent>
-                    <RentText>O aluguel de cada maquininha custa <span className='attention-strong'>R$ 90,00/mês.</span><br></br>Isenção para faturamento mensal acima de <span className='attention-strong'>R$ 100.000,00.</span></RentText>
+                    <RentText><span className='attention-strong'>Sua maquininha pode sair com custo zero!</span><br></br>Quanto mais você faturar, mais desconto você ganha. Procure nossos consultores Mulvi Pay</RentText>
                 </ContentRent>
                 <ContainerBenefitsSolutions className='container-benefits-second'>
                     <FirstContent className='first-content-second'>

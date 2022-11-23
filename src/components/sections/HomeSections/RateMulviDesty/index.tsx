@@ -418,7 +418,7 @@ const RateMulviDesty = () => {
         <ContentSimulate>
           <SimulationData>
             <TitleSimulate>Simule com a <span className='attention-strong'>Mulvi Pay</span></TitleSimulate>
-            <WrapperInput>
+            <WrapperInput className='sale-value'>
               <Label>Digite o valor da sua venda</Label>
               <InputGroup>
                 <Input value={saleValue} onChange={(event) => handleChange(moneyMask(event))} name='sale' />

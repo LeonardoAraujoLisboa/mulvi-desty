@@ -59,10 +59,10 @@ const Footer = () => {
         </ContainerCentralSocial>
         <ContainerPolitic>
           <ContentPolitic>
-            <PoliticItem href='/'>Direitos do Titular</PoliticItem>
-            <PoliticItem href='/'>Termos de uso</PoliticItem>
-            <PoliticItem href='/'>Política de Privacidade</PoliticItem>
-            <PoliticItem href='/'>Política de Segurança</PoliticItem>
+            <PoliticItem href='mulvipay.com.br/termosdeuso' target={'_blank'}>Direitos do Titular</PoliticItem>
+            <PoliticItem href='mulvipay.com.br/termosdeuso' target={'_blank'}>Termos de uso</PoliticItem>
+            <PoliticItem href='mulvipay.com.br/politicadeseguranca' target={'_blank'}>Política de Privacidade</PoliticItem>
+            <PoliticItem href='mulvipay.com.br/politicadeseguranca' target={'_blank'}>Política de Segurança</PoliticItem>
           </ContentPolitic>
         </ContainerPolitic>
       </WrapperFooter>

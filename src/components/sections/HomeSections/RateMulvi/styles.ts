@@ -196,6 +196,7 @@ export const SimulationData = styled.div`
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         margin-bottom: 0px;
+        justify-content: space-between;
     }
 
     @media (min-width: 1440px) {
@@ -207,21 +208,55 @@ export const SimulationData = styled.div`
 `
 
 export const WrapperInput = styled.div`
+    @media (min-width: 375px) {
+        width: 300px;
+
+        .period-select > div {
+            width: 300px;
+        }
+
+        .flags-select > div {
+            width: 300px;
+        }
+    }
+
     @media (min-width: 1024px) {
         margin-bottom: 0px;
         width: 250px;
+        justify-self: center;
 
         &.card-flags {
             margin-bottom: 0px;
+            justify-self: flex-end;
+        }
+
+        &.sale-value {
+            justify-self: flex-start;
+        }
+
+        .period-select > div {
+            width: 250px;
+        }
+
+        .flags-select > div {
+            width: 250px;
         }
     }
 
     @media (min-width: 1440px) {
         margin-bottom: 33px;
-        width: auto;
+        width: 300px;
 
         &.card-flags {
             margin-bottom: 0px;
+        }
+
+        .period-select > div {
+            width: 300px;
+        }
+
+        .flags-select > div {
+            width: 300px;
         }
     }
 `

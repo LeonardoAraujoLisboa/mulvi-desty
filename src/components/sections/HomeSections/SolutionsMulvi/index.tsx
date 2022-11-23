@@ -32,7 +32,7 @@ const SolutionsMulvi = () => {
             <ContentSolution>
                 <Title className='second-title'>Mais do que uma maquininha, <span className='attention-strong'>somos o parceiro que movimenta o seu negócio.</span></Title>
                 <ContentRent>
-                    <RentText>O aluguel de cada maquininha custa R$ 90,00/mês. Isenção para faturamento mensal acima de R$ 100.000,00.</RentText>
+                    <RentText><span className='attention-strong'>Sua maquininha pode sair com custo zero!</span><br></br>Quanto mais você faturar, mais desconto você ganha. Procure nossos consultores Mulvi Pay</RentText>
                 </ContentRent>
                 <ContainerBenefitsSolutions className='container-benefits-second'>
                     <FirstContent className='first-content-second'>

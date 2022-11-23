@@ -3,7 +3,7 @@ export const colorStyles: any = {
       ...styles,
       backgroundColor: '#fff',
       height: '48px',
-      width: '305px',
+      width: '250px',
       border: '1px solid #A5AAB4',
       outline: isFocused === true && '1px solid #A5AAB4',
       '&:hover': {
