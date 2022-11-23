@@ -85,6 +85,8 @@
 
             .nav-item {
                 z-index: 1000;
+                width: fit-content;
+                margin: auto;
                 .nav-link {
                     font-weight: 400;
                     font-size: 24px;
@@ -318,4 +320,27 @@
         align-items: center !important;
         justify-content: space-between !important;
     }
+
+    .link-menu:hover {
+        font-weight: 700 !important;
+    }
+
+    .my-account:hover {
+        .nav-link {
+            font-weight: 700 !important;
+        }
+    }
+
+    .be-mulvi:hover {
+        .nav-link {
+            padding: 16px 32px !important; 
+            color: #fff;
+            background: $text_link;
+        }
+    }
+}
+
+.link-menu.active {
+    font-weight: 700;
+    color: $text_menu_active;
 }

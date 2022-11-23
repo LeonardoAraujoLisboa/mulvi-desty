@@ -116,8 +116,10 @@ export const ContentInfo = styled.div`
     }
 
     @media (min-width: 1440px) {
-        padding-left: 400px;
-        padding-right: 400px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-right: 0px;
+        margin-left: 0px;
         margin-bottom: 40px;
     }
 `

@@ -8,9 +8,63 @@ const Menu = () => {
 
     const [isOpen, setIsOpen] = useState(false)
     const [expand, setExpand] = useState(true)
+    const [benefitsActive, setBenefitsActive] = useState(false)
+    const [rateActive, setRateActive] = useState(false)
+    const [solutionsActive, setSolutionsActive] = useState(false)
+    const [contentsActive, setContentsActive] = useState(false)
+    const [faqActive, setFaqActive] = useState(false)
+    const [whoWeAreActive, setWhoWeAreActive] = useState(false)
 
     const toggle = () => {
-        setIsOpen(!isOpen)
+        if (!expand) {
+            setIsOpen(!isOpen)
+        }
+    }
+
+    const handleClickMenu = (menu: string) => {
+        if (menu === 'benefits') {
+            setBenefitsActive(true)
+            setRateActive(false)
+            setSolutionsActive(false)
+            setContentsActive(false)
+            setFaqActive(false)
+            setWhoWeAreActive(false)
+        } else if (menu === 'rate') {
+            setRateActive(true)
+            setBenefitsActive(false)
+            setSolutionsActive(false)
+            setContentsActive(false)
+            setFaqActive(false)
+            setWhoWeAreActive(false)
+        } else if (menu === 'solutions') {
+            setSolutionsActive(true)
+            setBenefitsActive(false)
+            setRateActive(false)
+            setContentsActive(false)
+            setFaqActive(false)
+            setWhoWeAreActive(false)
+        } else if (menu === 'contents') {
+            setContentsActive(true)
+            setRateActive(false)
+            setSolutionsActive(false)
+            setBenefitsActive(false)
+            setFaqActive(false)
+            setWhoWeAreActive(false)
+        } else if (menu === 'faq') {
+            setFaqActive(true)
+            setRateActive(false)
+            setSolutionsActive(false)
+            setBenefitsActive(false)
+            setContentsActive(false)
+            setWhoWeAreActive(false)
+        } else if (menu === 'whoWeAre') {
+            setWhoWeAreActive(true)
+            setRateActive(false)
+            setSolutionsActive(false)
+            setBenefitsActive(false)
+            setContentsActive(false)
+            setFaqActive(false)
+        }
     }
 
     useEffect(() => {
@@ -33,7 +87,7 @@ const Menu = () => {
     }, [])
 
     return (
-        <Navbar expand={expand} className={`container-web ${isOpen ? 'menu-open' : 'menu-close'}`}>
+        <Navbar expand={expand} fixed={`${expand && 'top'}`} className={`container-web ${isOpen ? 'menu-open' : 'menu-close'}`}>
             <NavbarBrand href="/" >
                 <Logo />
             </NavbarBrand>
@@ -41,30 +95,30 @@ const Menu = () => {
             <Collapse isOpen={isOpen} navbar>
                 <Nav className='me-auto' navbar>
                     <NavItem onClick={toggle}>
-                        <NavLink href="#benefits" className='link-menu'>Vantagens</NavLink>
+                        <NavLink href="#benefits" className={`link-menu ${benefitsActive ? 'active': ''}`} id="#benefits" onClick={() => handleClickMenu('benefits')}>Vantagens</NavLink>
                     </NavItem>
                     <NavItem onClick={toggle}>
-                        <NavLink href="#rate" className='link-menu'>
+                        <NavLink href="#rate" className={`link-menu ${rateActive ? 'active': ''}`} onClick={() => handleClickMenu('rate')}>
                             Taxas
                         </NavLink>
                     </NavItem>
                     <NavItem onClick={toggle}>
-                        <NavLink href="#solutions" className='link-menu'>
+                        <NavLink href="#solutions" className={`link-menu ${solutionsActive ? 'active': ''}`} onClick={() => handleClickMenu('solutions')}>
                             Soluções
                         </NavLink>
                     </NavItem>
                     <NavItem onClick={toggle}>
-                        <NavLink href="#contents" className='link-menu'>
+                        <NavLink href="#contents" className={`link-menu ${contentsActive ? 'active': ''}`} onClick={() => handleClickMenu('contents')}>
                             Conteúdos
                         </NavLink>
                     </NavItem>
                     <NavItem onClick={toggle}>
-                        <NavLink href="#faq" className='link-menu'>
+                        <NavLink href="#faq" className={`link-menu ${faqActive ? 'active': ''}`} onClick={() => handleClickMenu('faq')}>
                         Perguntas Frequentes
                         </NavLink>
                     </NavItem>
                     <NavItem className='whoWeAre' onClick={toggle}>
-                        <NavLink href="#whoWeAre" className='link-menu'>
+                        <NavLink href="#whoWeAre" className={`link-menu ${whoWeAreActive ? 'active': ''}`} onClick={() => handleClickMenu('whoWeAre')}>
                         Quem Somos
                         </NavLink>
                     </NavItem>

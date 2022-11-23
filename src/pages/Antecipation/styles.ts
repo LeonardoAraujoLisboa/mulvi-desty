@@ -109,6 +109,12 @@ export const ContentBanner = styled.img`
 `
 
 export const ContentInfo = styled.div`
+    @media (min-width: 375px) {
+        margin-bottom: 80px;
+        margin: auto;
+        max-width: 640px;
+    }
+
     @media (min-width: 1024px) {
         margin-bottom: 80px;
         margin: auto;
@@ -116,8 +122,10 @@ export const ContentInfo = styled.div`
     }
 
     @media (min-width: 1440px) {
-        padding-left: 400px;
-        padding-right: 400px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-right: 0px;
+        margin-left: 0px;
         margin-bottom: 40px;
     }
 `
@@ -139,6 +147,14 @@ export const Date = styled.p`
 `
 
 export const InfoTitle = styled.h5`
+    @media (min-width: 375px) {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 33px;
+        color: ${({theme}) => theme.colors.text_secundary};
+        margin-bottom: 16px;
+    }
+
     @media (min-width: 1024px) {
         font-weight: 400;
         font-size: 24px;
@@ -156,6 +172,18 @@ export const InfoTitle = styled.h5`
 `
 
 export const InfoText = styled.p`
+    @media (min-width: 375px) {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21.79px;
+        color: ${({theme}) => theme.colors.text_secundary};
+        margin-bottom: 16px;
+
+        &.last-text {
+            margin-bottom: 0px;
+        }
+    }
+
     @media (min-width: 1024px) {
         font-weight: 400;
         font-size: 16px;

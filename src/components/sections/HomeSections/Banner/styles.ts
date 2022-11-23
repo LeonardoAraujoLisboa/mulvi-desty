@@ -11,6 +11,10 @@ export const Container = styled.div`
         padding-left: 40px;
         padding-right: 40px;
     }
+
+    @media (min-width: 1440px) {
+        margin-top: 119px;
+    }
 `
 
 export const BannerImg = styled.img`
