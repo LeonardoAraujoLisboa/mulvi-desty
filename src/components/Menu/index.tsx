@@ -21,6 +21,13 @@ const Menu = () => {
         }
     }
 
+    const handleClickMenuMobile = () => {
+        if (!expand) {
+            setIsOpen(!isOpen)
+            window.location.href = '/#top'
+        }
+    }
+
     const handleClickMenu = (menu: string) => {
         if (menu === 'benefits') {
             setBenefitsActive(true)
@@ -87,11 +94,13 @@ const Menu = () => {
     }, [])
 
     return (
-        <Navbar expand={expand} fixed={`${expand && 'top'}`} className={`container-web ${isOpen ? 'menu-open' : 'menu-close'}`}>
+        <Navbar expand={expand} fixed={'top'} className={`container-web ${isOpen ? 'menu-open' : 'menu-close'}`}id='top'>
             <NavbarBrand href="/" >
                 <Logo />
             </NavbarBrand>
-            <NavbarToggler onClick={toggle} />
+            <a href='#top'>
+                <NavbarToggler onClick={handleClickMenuMobile} />
+            </a>
             <Collapse isOpen={isOpen} navbar>
                 <Nav className='me-auto' navbar>
                     <NavItem onClick={toggle}>

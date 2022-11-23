@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     position: relative;
+    margin-top: 119px;
 
     @media (min-width: 375px) {
         margin-bottom: 40px;
@@ -10,10 +11,6 @@ export const Container = styled.div`
     @media (min-width: 1024px) {
         padding-left: 40px;
         padding-right: 40px;
-    }
-
-    @media (min-width: 1440px) {
-        margin-top: 119px;
     }
 `
 
