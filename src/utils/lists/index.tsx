@@ -115,7 +115,7 @@ export const ListBenefitsSolutionsFirstSecondGroup = [
     },
     {
         icon: Whatsapp,
-        title: 'Whatsapp',
+        title: 'Loja no Whatsapp',
         coming_soon: true
     },
     {
@@ -146,6 +146,10 @@ export const ListBenefitsSolutionsSecond = [
     {
         icon: Checked,
         title: 'Vale Alimentação',
+    },
+    {
+        icon: Checked,
+        title: 'Pagamento por cartão com chip, tarja ou aproximação',
     },
 ]
 
