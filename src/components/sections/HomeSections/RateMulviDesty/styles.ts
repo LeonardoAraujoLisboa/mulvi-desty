@@ -184,7 +184,7 @@ export const TitleSimulate = styled.h1`
     }
 
     @media (min-width: 1440px) {
-        margin-bottom: 33px;
+        margin-bottom: 16px;
     }
 `
 
@@ -271,7 +271,7 @@ export const SimulationAnotherAccount = styled.div`
     }
 
     @media (min-width: 1440px) {
-        width: 355px;
+        width: 360px;
         height: fit-content;
         margin-top: 0px;
         background-color: ${({theme}) => theme.colors.background_another_account};

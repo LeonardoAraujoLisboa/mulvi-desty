@@ -183,7 +183,7 @@ export const TitleSimulate = styled.h1`
     }
 
     @media (min-width: 1440px) {
-        margin-bottom: 33px;
+        margin-bottom: 16px;
     }
 `
 

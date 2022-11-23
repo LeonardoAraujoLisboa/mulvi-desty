@@ -1,21 +1,20 @@
 import React from 'react'
 import { Card, CardBody, CardText, CardTitle } from 'reactstrap'
+import { BusinessCardProps } from '../../utils/interfaces';
 import { Container, Title, ContentCard } from './styles';
 
-interface Props {
-    data: {
-        icon: string;
-        info_icon: string;
-        title: string;
-        text: string;
-        link: string;
-    }[]
-}
+const BusinessContentCard = ({data}: BusinessCardProps) => {
 
-const BusinessContentCard = ({data}: Props) => {
-
-    const handleClick = (link: string) => {
-        window.location.href = `/${link}`
+    const handleClick = (id: string) => {
+        if (id === '1') {
+            window.location.href = `/contents/${id}/medium-ticket`
+        } else if (id === '2') {
+            window.location.href = `/contents/${id}/main-mistakes`
+        } else if (id === '3') {
+            window.location.href = `/contents/${id}/working-capital`
+        } else {
+            window.location.href = `/contents/${id}/antecipation`
+        }
     }
 
   return (
@@ -23,7 +22,7 @@ const BusinessContentCard = ({data}: Props) => {
       <Title className='attention-strong'>Conteúdos para seu negócio</Title>
       <ContentCard>
             {data.map((item, index) => (
-                <Card key={index} tag={'button'} onClick={() => handleClick(item.link)}>
+                <Card key={index} tag={'button'} onClick={() => handleClick(item.id)}>
                     <img alt={item.info_icon} src={item.icon} width='100%' />
                     <CardBody>
                         <CardTitle>{item.title}</CardTitle>

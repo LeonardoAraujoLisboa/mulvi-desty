@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, ContentImg, SingleSolutionsImg, ContentSolution, Title, SolutionText, ContainerBenefitsSolutions, FirstContent, SecondContent, FirstContainer, SecondContainer, MulviDestyContainer, WrapperImg, MulviDestyImg, ContentLogos, ContentInfoMulviDesty, InfoMulviDestyText, ContentCallBack, CallBackTitle, ContentStore, ContentRent, RentText } from './styles'
+import { Container, ContentImg, SingleSolutionsImg, ContentSolution, Title, SolutionText, ContainerBenefitsSolutions, FirstContent, SecondContent, FirstContainer, SecondContainer, MulviDestyContainer, WrapperImg, MulviDestyImg, ContentLogos, ContentInfoMulviDesty, InfoMulviDestyText, ContentCallBack, CallBackTitle, ContentStore, ContentRent, RentText, Link } from './styles'
 import SingleSolutions from '../../../../assets/single-solutions.png'
 import {ReactComponent as MulviPayLogo} from '../../../../assets/mulvi-pay-second.svg'
 import {ReactComponent as DestyLogo} from '../../../../assets/desty.svg'
@@ -11,7 +11,6 @@ import MulviButton from '../../../MulviButton'
 import MachineCharacteristics from '../../../MachineCharacteristics'
 import { ListBenefitsSolutionsFirstFirstGroup, ListBenefitsSolutionsFirstSecondGroup, ListBenefitsSolutionsSecond, ListCharacteristics } from '../../../../utils/lists'
 import Machine from '../../../../assets/machine.png'
-import { Link } from 'react-router-dom'
 
 const SolutionsMulviDesty = () => {
   return (
@@ -59,17 +58,17 @@ const SolutionsMulviDesty = () => {
                 <MulviPayLogo className='mulvi-logo' /> <span className='plus'>+</span> <DestyLogo className='desty-logo' />{'\n'}
                 <span className='attention-strong'>é mais dinheiro no bolso.</span>
                 <ContentInfoMulviDesty>
-                    <InfoMulviDestyText>A parceria da Mulvi Pay com o Desty, o banco digital do Banese, tras oportunidades e benefícios únicos para o seu negócio.</InfoMulviDestyText>
+                    <InfoMulviDestyText>A parceria da Mulvi Pay com o Desty, o banco digital do Banese, traz oportunidades e benefícios únicos para o seu negócio.</InfoMulviDestyText>
                     <InfoMulviDestyText>Abra sua conta gratuita no Desty, coloque ela como seu domícilio bancário na Mulvi Pay e receba taxas diferenciadas.</InfoMulviDestyText>
                     <InfoMulviDestyText>*Exclusivo Pessoas Fïsicas (Em breve Pessoa Jurídica)</InfoMulviDestyText>
                 </ContentInfoMulviDesty>
                 <ContentCallBack>
                     <CallBackTitle>Baixe o app e crie sua conta no Desty.</CallBackTitle>
                     <ContentStore>
-                        <Link to={'/'}>
+                        <Link href={'https://play.google.com/store/apps/details?id=br.com.banese.digital&hl=pt'} target={'_blank'}>
                             <GooglePlay className='google-play' />
                         </Link>
-                        <Link to={'/'}>
+                        <Link href={'https://apps.apple.com/br/app/desty/id1541641523'} target={'_blank'}>
                             <AppStore className='apple-store' />
                         </Link>
                     </ContentStore>

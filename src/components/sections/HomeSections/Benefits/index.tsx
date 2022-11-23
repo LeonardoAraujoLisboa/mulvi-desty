@@ -6,7 +6,6 @@ import Revenue from '../../../../assets/revenue.svg'
 import Account from '../../../../assets/account.svg'
 import Attendance from '../../../../assets/attendance.svg'
 import AllFlagsCard from '../../../../assets/all-flags-card.png'
-import AllFlagsCardMobile from '../../../../assets/mobile/all-flags-card.png'
 
 const Benefits = () => {
   return (
@@ -21,7 +20,6 @@ const Benefits = () => {
         <ContentFlags>
             <InfoText>Principais bandeiras do mercado para melhor atender o seu negócio</InfoText>
             <AllFlags src={AllFlagsCard} className='flags-card' />
-            <AllFlags src={AllFlagsCardMobile} className='flags-card-mobile' />
         </ContentFlags>
     </Container>
   )

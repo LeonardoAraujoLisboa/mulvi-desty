@@ -45,28 +45,32 @@ export const ListBusinessContentCard = [
         info_icon: 'Ticket médio',
         title: 'Ticket médio: saiba como aumentar ele na sua empresa',
         text: 'O ticket médio indica o valor médio gasto por seus clientes. Mas como aumentar esse valor?',
-        link: 'medium-ticket'
+        id: '1',
+        date: '28 de Outubro de 2022'
     },
     {
         icon: MainMistakes,
         info_icon: 'Principais erros',
         title: 'Os principais erros de quem inicia um empreendimento',
         text: 'Será que você está cometendo um destes principais erros do empreendedor iniciante?',
-        link: 'main-mistakes'
+        id: '2',
+        date: '28 de Outubro de 2022'
     },
     {
         icon: WorkingCapital,
         info_icon: 'Capital de giro',
         title: 'Capital de giro: o que é e qual a sua importância?',
         text: 'Você sabe o que é e como calcular seu capital de giro?',
-        link: 'working-capital'
+        id: '3',
+        date: '28 de Outubro de 2022'
     },
     {
         icon: Antecipation,
         info_icon: 'Antecipação automática?',
         title: 'O que é antecipação automática?',
         text: 'Entenda melhor como funciona e quais as vantagens e desvantagens para o negócio!',
-        link: 'antecipation'
+        id: '4',
+        date: '28 de Outubro de 2022'
     }
 ]
 

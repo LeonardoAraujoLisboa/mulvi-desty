@@ -1017,3 +1017,7 @@ export const ContentStore = styled.div`
         }
     }
 `
+
+export const Link = styled.a`
+    
+`

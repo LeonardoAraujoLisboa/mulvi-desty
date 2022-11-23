@@ -217,6 +217,12 @@
                 }
             }
 
+            .be-mulvi:hover {
+                .nav-link {
+                    background: $border_color;
+                }
+            }
+
             .my-account {
                 width: fit-content;
                 margin-top: 0px;
@@ -228,6 +234,13 @@
                     padding: 16px 45.5px;
                     border: 1px solid #fff;
                     border-radius: 40px;
+                }
+            }
+
+            .my-account:hover {
+                .nav-link {
+                    border-color: $background_primary;
+                    color: $background_primary;
                 }
             }
         }

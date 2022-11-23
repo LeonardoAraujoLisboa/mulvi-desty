@@ -13,13 +13,13 @@ const RateMulviDesty = () => {
   const [saleValue, setSaleValue] = useState('R$ 10,00')
   const [periodValue, setPeriodValue] = useState<SelectPeriodProps>({label: 'Antecipado (em 1 dia)', value: 'Antecipado (em 1 dia)'})
   const [flagsValue, setFlagsValue] = useState<SelectFlagsProps>({label: 'Master Card e Visa', value: 'Master Card e Visa'})
-  const [installmentsValue, setInstallmentsValue] = useState({label: '1x', value: '1x'})
+  const [installmentsValue, setInstallmentsValue] = useState({label: '2x', value: '2x'})
   const [debitRateValue, setDebitRateValue] = useState('')
   const [creditRateValue, setCreditRateValue] = useState('')
   const [installmentsRateValue, setInstallmentsRateValue] = useState('')
 
   /* Mulvi */
-  const [installmentsMulviValue, setInstallmentsMulviValue] = useState({label: '1x', value: '1x'})
+  const [installmentsMulviValue, setInstallmentsMulviValue] = useState({label: '2x', value: '2x'})
   const [debitMulviRateValue, setDebitMulviRateValue] = useState('')
   const [creditMulviRateValue, setCreditMulviRateValue] = useState('')
   const [installmentsMulviRateValue, setInstallmentsMulviRateValue] = useState('')
@@ -90,7 +90,7 @@ const RateMulviDesty = () => {
 
   const showOptionsInstallments = () => {
     let allOptionInstallments = []
-    for (let index = 1; index <= 12; index++) {
+    for (let index = 2; index <= 12; index++) {
       allOptionInstallments.push(index)
     }
     const restructuring = allOptionInstallments.map((item) => {
@@ -436,7 +436,7 @@ const RateMulviDesty = () => {
             </WrapperInput>
           </SimulationData>
           <SimulationResults>
-            <TitleResults className='title'>Usando Conta Desty:</TitleResults>
+            <TitleResults className='title'>Usando conta Desty:</TitleResults>
             <ContainerResults>
               <ContentFlag>
                 <OptionTitle>No débito</OptionTitle>

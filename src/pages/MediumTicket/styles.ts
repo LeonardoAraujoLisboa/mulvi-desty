@@ -14,7 +14,12 @@ export const ContentTitle = styled.div`
 
 export const PageTitle = styled.p`
     @media (min-width: 1024px) {
-        display: none;
+        margin-bottom: 60px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+        color: ${({theme}) => theme.colors.text_secundary};
+        text-align: center;
     }
 
     @media (min-width: 1440px) {
@@ -28,6 +33,7 @@ export const PageTitle = styled.p`
 `
 
 export const Title = styled.h4`
+    font-family: 'Elizeth Regular', Arial, Helvetica, sans-serif;
     @media (min-width: 1024px) {
         font-weight: 400;
         font-size: 48px;
@@ -37,6 +43,7 @@ export const Title = styled.h4`
         margin-bottom: 16px;
         padding-left: 46px;
         padding-right: 46px;
+        
     }
 
     @media (min-width: 1440px) {
@@ -55,29 +62,33 @@ export const Title = styled.h4`
 export const Subtitle = styled.div`
     @media (min-width: 1024px) {
         font-weight: 400;
-        font-size: 32px;
-        line-height: 44px;
+        font-size: 24px;
+        line-height: 31px;
         text-align: center;
         color: ${({theme}) => theme.colors.text_menu};
-        margin-bottom: 48px;
         padding-left: 99px;
         padding-right: 99px;
+        margin: auto;
+        margin-bottom: 48px;
+        max-width: 1088px;
     }
 
     @media (min-width: 1440px) {
         font-weight: 400;
-        font-size: 32px;
-        line-height: 44px;
+        font-size: 24px;
+        line-height: 31px;
         text-align: center;
         color: ${({theme}) => theme.colors.text_menu};
+        margin: auto;
+        max-width: 1088px;
         margin-bottom: 48px;
     }
 `
 
 export const WrapperBanner = styled.div`
     @media (min-width: 1024px) {
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 176px;
+        padding-right: 176px;
         margin-bottom: 47px;
         text-align: center;
     }
@@ -99,9 +110,9 @@ export const ContentBanner = styled.img`
 
 export const ContentInfo = styled.div`
     @media (min-width: 1024px) {
-        padding-left: 203px;
-        padding-right: 203px;
         margin-bottom: 80px;
+        margin: auto;
+        max-width: 640px;
     }
 
     @media (min-width: 1440px) {
@@ -169,20 +180,14 @@ export const InfoText = styled.p`
     }
 `
 
-export const SecondWrapperBanner = styled.div`
-    @media (min-width: 1440px) {
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
+export const List = styled.ul`
+
 `
 
-export const SecondContentBanner = styled.img`
-    border-radius: 16px;
-    
-    @media (min-width: 1024px) {
-        width: 100%;
-    }
+export const ListItem = styled.li`
+
 `
+
 
 export const Divider = styled.div`
     @media (min-width: 1024px) {
@@ -221,5 +226,13 @@ export const TitleMoreContent = styled.p`
         line-height: 34px;
         color: ${({theme}) => theme.colors.text_secundary};
         margin-bottom: 40px;
+    }
+`
+
+export const Link = styled.a`
+    text-decoration: underline;
+    color: ${({theme}) => theme.colors.text_secundary};
+    &:hover {
+        color: ${({theme}) => theme.colors.text_secundary};
     }
 `

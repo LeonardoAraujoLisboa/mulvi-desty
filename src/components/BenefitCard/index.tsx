@@ -9,7 +9,7 @@ interface Props {
 
 const BenefitCard = ({icon, text}: Props) => {
   return (
-    <Card>
+    <Card className='benefit-card'>
       <CardImg top width='100%' alt='bandeiras' src={icon} />
       <CardText>{text}</CardText>
     </Card>

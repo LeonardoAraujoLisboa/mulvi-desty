@@ -14,7 +14,6 @@ const Banner = () => {
             <SubTitle>Conheça um mundo de múltiplas possibilidades.</SubTitle>
             <MulviButton />
         </ContentText>
-        <MulviButton id='btn-mobile' />
     </Container>
   )
 }

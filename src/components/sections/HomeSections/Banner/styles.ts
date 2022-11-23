@@ -4,25 +4,12 @@ export const Container = styled.div`
     position: relative;
 
     @media (min-width: 375px) {
-        #btn-mobile {
-            margin-top: 40px;
-            margin-bottom: 40px;
-        }
+        margin-bottom: 40px;
     }
 
     @media (min-width: 1024px) {
         padding-left: 40px;
         padding-right: 40px;
-
-        #btn-mobile {
-            display: none;
-        }
-    }
-
-    @media (min-width: 1440px) {
-        #btn-mobile {
-            display: none;
-        }
     }
 `
 
@@ -69,7 +56,8 @@ export const ContentText = styled.div`
         margin-bottom: 24px;
 
         .btn-mulvi {
-            display: none;
+            margin-right: 25px;
+            width: auto;
         }
     }
 
@@ -77,20 +65,12 @@ export const ContentText = styled.div`
         top: 42px;
         left: 80px;
         max-width: 375px;
-
-        .btn-mulvi {
-            display: block;
-        }
     }
 
     @media (min-width: 1440px) {
         top: 153px;
         left: 110px;
         max-width: 466px;
-
-        .btn-mulvi {
-            display: block;
-        }
     }
 `
 

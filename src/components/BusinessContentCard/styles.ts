@@ -31,6 +31,7 @@ export const Title = styled.h1`
 export const ContentCard = styled.div`
     .card {
         transition: 0.3s;
+        width: 302px;
     }
 
     .card:hover {

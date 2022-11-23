@@ -75,6 +75,14 @@ export const GlobalStyles = createGlobalStyle`
             line-height: 27.24px;
             color: ${({theme}) => theme.colors.text_menu};
         }
+
+        h1 {
+            font-family: 'Elizeth Regular', Arial, Helvetica, sans-serif;
+        }
+
+        h2 {
+            font-family: 'Elizeth Regular', Arial, Helvetica, sans-serif;
+        }
     }
 
     @media (min-width: 1024px) {
