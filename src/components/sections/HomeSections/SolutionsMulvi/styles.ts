@@ -201,7 +201,7 @@ export const ContentRent  = styled.div`
 
     @media (min-width: 1440px) {
         margin-left: 63px;
-        width: fit-content;
+        width: 474px;
     }
 `
 

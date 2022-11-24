@@ -48,10 +48,10 @@ const Footer = () => {
               <a href={'https://www.instagram.com/soumulvi/'} target={'_blank'} rel="noreferrer">
                 <Instagram />
               </a>
-              <a href={'https://www.linkedin.com/company/mulvi/'} target={'_blank'} rel="noreferrer">
+              <a href={'https://www.facebook.com/profile.php?id=100084447383790'} target={'_blank'} rel="noreferrer">
                 <Facebook />
               </a>
-              <a href={'https://www.facebook.com/profile.php?id=100084447383790'} target={'_blank'} rel="noreferrer">
+              <a href={'https://www.linkedin.com/company/mulvi/'} target={'_blank'} rel="noreferrer">
                 <LinkedIn />
               </a>
             </ContentMedias>
@@ -59,9 +59,9 @@ const Footer = () => {
         </ContainerCentralSocial>
         <ContainerPolitic>
           <ContentPolitic>
-            <PoliticItem href='mulvipay.com.br/termosdeuso' target={'_blank'}>Direitos do Titular</PoliticItem>
+            <PoliticItem href='https://www.e-seac.com.br/direito-titulares' target={'_blank'}>Direitos do Titular</PoliticItem>
             <PoliticItem href='mulvipay.com.br/termosdeuso' target={'_blank'}>Termos de uso</PoliticItem>
-            <PoliticItem href='mulvipay.com.br/politicadeseguranca' target={'_blank'}>Política de Privacidade</PoliticItem>
+            <PoliticItem href='https://privacidade.banese.com.br/privacidade/politica.html' target={'_blank'}>Política de Privacidade</PoliticItem>
             <PoliticItem href='mulvipay.com.br/politicadeseguranca' target={'_blank'}>Política de Segurança</PoliticItem>
           </ContentPolitic>
         </ContainerPolitic>

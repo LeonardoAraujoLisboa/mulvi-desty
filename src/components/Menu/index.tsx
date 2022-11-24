@@ -98,7 +98,7 @@ const Menu = () => {
             <NavbarBrand href="/" >
                 <Logo />
             </NavbarBrand>
-            <a href='#top'>
+            <a href='#top' id='icon-mobile'>
                 <NavbarToggler onClick={handleClickMenuMobile} />
             </a>
             <Collapse isOpen={isOpen} navbar>

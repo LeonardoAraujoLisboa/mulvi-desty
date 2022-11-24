@@ -26,10 +26,14 @@
 }
 
 .link-menu:hover {
-    color: $text_menu !important;
+    color: $border_color !important;
 }
 
 @media (min-width: 375px) {
+    #icon-mobile {
+        display: block;
+    }
+
     .menu-close {
         padding-left: 17px;
         padding-right: 17px;
@@ -133,12 +137,20 @@
 }
 
 @media (min-width: 1024px) {
+    #icon-mobile {
+        display: block;
+    }
+
     .menu-close {
         padding: 32px 40px;
     }
 }
 
 @media (min-width: 600px) and (max-width: 1439px) {
+    #icon-mobile {
+        display: block;
+    }
+
     .menu-open {
         background-color: $text_link;
         position: absolute;
@@ -314,15 +326,15 @@
 }
 
 @media (min-width: 1440px) {
+    #icon-mobile {
+        display: none;
+    }
+
     .container-fluid {
         display: grid !important;
         grid-template-columns: 1fr 1fr;
         align-items: center !important;
         justify-content: space-between !important;
-    }
-
-    .link-menu:hover {
-        font-weight: 700 !important;
     }
 
     .my-account:hover {

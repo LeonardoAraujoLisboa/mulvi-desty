@@ -12,8 +12,8 @@ const Benefits = () => {
     <Container id='benefits' className='container-web'>
         <Title>Vantagens <span className='attention-strong'>Mulvi Pay</span></Title>
         <ContentCards>
-            <BenefitCard text='Aceita todas bandeiras do mercado nacional' icon={Flags} />
-            <BenefitCard text='Ferramentas para aumentar a receita do seu negocio' icon={Revenue} />
+            <BenefitCard text='Aceita as principais bandeiras do mercado' icon={Flags} />
+            <BenefitCard text='Ferramentas para aumentar a receita do seu negócio' icon={Revenue} />
             <BenefitCard text='Conta digital gratuita no Desty' icon={Account} />
             <BenefitCard text='Central de atendimento exclusiva' icon={Attendance} />
         </ContentCards>
