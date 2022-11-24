@@ -508,7 +508,7 @@ const RateMulviDesty = () => {
       <ContentOpenDesty>
         <LogoDesty className='logo-desty-rate' />
         <ContentTextDesty>
-          <TextDesty><span className='attention-strong'>Abra sua conta gratuita no Desty</span> coloque ela como seu domícilio bancário e receba taxas diferenciadas.<br></br>Exclusivo Pessoas Fïsicas (Em breve Pessoa Jurídica)</TextDesty>
+          <TextDesty><a className='attention-strong' href='https://www.desty.b.br/' target={'_blank'} rel="noreferrer">Abra sua conta gratuita no Desty,</a> coloque ela como seu domicílio bancário e receba taxas diferenciadas.<br></br>Exclusivo Pessoa Física (Em breve Pessoa Jurídica)</TextDesty>
         </ContentTextDesty>
       </ContentOpenDesty>
     </Container>

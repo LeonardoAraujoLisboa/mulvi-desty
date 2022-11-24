@@ -59,8 +59,8 @@ const SolutionsMulviDesty = () => {
                 <span className='attention-strong'>é mais dinheiro no bolso.</span>
                 <ContentInfoMulviDesty>
                     <InfoMulviDestyText>A parceria da Mulvi Pay com o Desty, o banco digital do Banese, traz oportunidades e benefícios únicos para o seu negócio.</InfoMulviDestyText>
-                    <InfoMulviDestyText>Abra sua conta gratuita no Desty, coloque ela como seu domícilio bancário na Mulvi Pay e receba taxas diferenciadas.</InfoMulviDestyText>
-                    <InfoMulviDestyText>*Exclusivo Pessoas Físicas (Em breve Pessoa Jurídica)</InfoMulviDestyText>
+                    <InfoMulviDestyText>Abra sua conta gratuita no Desty, coloque ela como seu domicílio bancário na Mulvi Pay e receba taxas diferenciadas.</InfoMulviDestyText>
+                    <InfoMulviDestyText>*Exclusivo Pessoa Física (Em breve Pessoa Jurídica)</InfoMulviDestyText>
                 </ContentInfoMulviDesty>
                 <ContentCallBack>
                     <CallBackTitle>Baixe o app e crie sua conta no Desty.</CallBackTitle>

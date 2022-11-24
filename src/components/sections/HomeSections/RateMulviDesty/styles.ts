@@ -650,6 +650,10 @@ export const TextDesty = styled.div`
             line-height: 21.79px;
             text-decoration-line: underline;
         }
+
+        .attention-strong:hover {
+            color: ${({theme}) => theme.colors.border_color};
+        }
     }
 
     @media (min-width: 1024px) {

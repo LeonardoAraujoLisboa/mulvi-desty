@@ -944,9 +944,7 @@ export const InfoMulviDestyText = styled.p`
         font-size: 16px;
         line-height: 21px;
         color: ${({theme}) => theme.colors.text_menu};
-        &:nth-child(2) {
-            max-width: 500px;
-        }
+        max-width: 550px;
     }
 `
 
