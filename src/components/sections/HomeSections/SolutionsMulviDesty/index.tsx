@@ -8,9 +8,9 @@ import {ReactComponent as GooglePlay} from '../../../../assets/google-play.svg'
 import {ReactComponent as AppStore} from '../../../../assets/app-store.svg'
 import BenefitisSolution from '../../../BenefitsSolutions'
 import MulviButton from '../../../MulviButton'
-import MachineCharacteristics from '../../../MachineCharacteristics'
-import { ListBenefitsSolutionsFirstFirstGroup, ListBenefitsSolutionsFirstSecondGroup, ListBenefitsSolutionsSecond, ListCharacteristics } from '../../../../utils/lists'
+import { ListBenefitsSolutionsFirstFirstGroup, ListBenefitsSolutionsFirstSecondGroup, ListBenefitsSolutionsSecond } from '../../../../utils/lists'
 import Machine from '../../../../assets/machine.png'
+import MachineMobile from '../../../../assets/mobile/machine-mobile.png'
 
 const SolutionsMulviDesty = () => {
   return (
@@ -44,10 +44,10 @@ const SolutionsMulviDesty = () => {
                         <BenefitisSolution data={ListBenefitsSolutionsSecond} />
                     </FirstContent>
                 </ContainerBenefitsSolutions>
-                <MachineCharacteristics title='Características da maquininha' list={ListCharacteristics} />
             </ContentSolution>
             <ContentImg className='bg-machine'>
                 <SingleSolutionsImg src={Machine} alt='soluções únicas' className='machine-bg' />
+                <SingleSolutionsImg src={MachineMobile} alt='soluções únicas' className='machine-bg-mobile' />
             </ContentImg>
         </SecondContainer>
         <MulviDestyContainer>

@@ -45,7 +45,7 @@ const Footer = () => {
           <ContentSocialMedia>
             <Title className='title-talk'>Vem conversar com a gente</Title>
             <ContentMedias>
-              <a href={'https://www.instagram.com/soumulvi/'} target={'_blank'} rel="noreferrer">
+              <a href={'https://instagram.com/mulvipay'} target={'_blank'} rel="noreferrer">
                 <Instagram />
               </a>
               <a href={'https://www.facebook.com/profile.php?id=100084447383790'} target={'_blank'} rel="noreferrer">

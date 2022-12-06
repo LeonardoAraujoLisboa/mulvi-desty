@@ -3,9 +3,9 @@ import { Container, ContentImg, SingleSolutionsImg, ContentSolution, Title, Solu
 import SingleSolutions from '../../../../assets/single-solutions.png'
 import BenefitisSolution from '../../../BenefitsSolutions'
 import MulviButton from '../../../MulviButton'
-import MachineCharacteristics from '../../../MachineCharacteristics'
 import { ListBenefitsSolutionsFirstFirstGroup, ListBenefitsSolutionsFirstSecondGroup, ListBenefitsSolutionsSecond, ListCharacteristics } from '../../../../utils/lists'
 import Machine from '../../../../assets/machine.png'
+import MachineMobile from '../../../../assets/mobile/machine-mobile.png'
 
 const SolutionsMulvi = () => {
   return (
@@ -39,10 +39,10 @@ const SolutionsMulvi = () => {
                         <BenefitisSolution data={ListBenefitsSolutionsSecond} />
                     </FirstContent>
                 </ContainerBenefitsSolutions>
-                <MachineCharacteristics title='Características da maquininha' list={ListCharacteristics} />
             </ContentSolution>
             <ContentImg className='bg-machine'>
                 <SingleSolutionsImg src={Machine} alt='soluções únicas' className='machine-bg' />
+                <SingleSolutionsImg src={MachineMobile} alt='soluções únicas' className='machine-bg-mobile' />
             </ContentImg>
         </SecondContainer>
     </Container>

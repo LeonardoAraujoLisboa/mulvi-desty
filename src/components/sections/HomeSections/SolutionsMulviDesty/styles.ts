@@ -56,6 +56,11 @@ export const SingleSolutionsImg = styled.img`
         }
 
         &.machine-bg {
+            display: none;
+        }
+
+        &.machine-bg-mobile {
+            display: block;
             width: 100%;
         }
      }
@@ -66,7 +71,12 @@ export const SingleSolutionsImg = styled.img`
         }
 
         &.machine-bg {
+            display: block;
             width: auto;
+        }
+
+        &.machine-bg-mobile {
+            display: none;
         }
     }
 
@@ -76,7 +86,12 @@ export const SingleSolutionsImg = styled.img`
         }
 
         &.machine-bg {
+            display: block;
             width: 100%;
+        }
+
+        &.machine-bg-mobile {
+            display: none;
         }
     }
 `
@@ -293,7 +308,7 @@ export const ContainerBenefitsSolutions  = styled.div`
     @media (min-width: 1024px) {
         display: flex;
         justify-content: flex-start;
-        margin-bottom: 44px;
+        margin-bottom: 0px;
 
         &.container-benefits-first {
             gap: 36px;
@@ -302,7 +317,7 @@ export const ContainerBenefitsSolutions  = styled.div`
 
         &.container-benefits-second {
             gap: 161px;
-            margin-bottom: 48px;
+            margin-bottom: 0px;
         }
     }
 
@@ -747,6 +762,7 @@ export const SecondContainer = styled.div`
 
     @media (min-width: 1024px) {
         display: grid;
+        margin-bottom: 0px;
     }
 
     @media (min-width: 1440px) {
@@ -805,6 +821,7 @@ export const MulviDestyContainer = styled.div`
 export const WrapperImg = styled.div`
     @media (min-width: 375px) {
         grid-row: 2;
+        margin-top: 0px;
     }
 
     @media (min-width: 1024px) {
@@ -812,11 +829,13 @@ export const WrapperImg = styled.div`
         background-color: ${({theme}) => theme.colors.background_mulvi_desty};
         grid-row: 2;
         grid-column: 1/-1;
+        margin-top: 0px;
     }
 
     @media (min-width: 1440px) {
         grid-row: 1;
         grid-column: 1;
+        margin-top: 136px;
     }
 `
 
@@ -836,6 +855,7 @@ export const MulviDestyImg = styled.img`
 
 export const ContentLogos = styled.div`
     @media (min-width: 375px) {
+        padding-top: 32px;
         .mulvi-logo, .desty-logo {
             display: block;
             margin: 0 auto;
@@ -866,6 +886,7 @@ export const ContentLogos = styled.div`
         align-items: center;
         margin-left: 40px;
         margin-top: 80px;
+        padding-top: 0px;
 
         .attention-strong {
             grid-column: 1/-1;
@@ -892,7 +913,8 @@ export const ContentLogos = styled.div`
         height: fit-content;
         align-items: center;
         margin-left: 57px;
-        margin-top: 80px;
+        margin-top: 136px;
+        padding-top: 0px;
 
         .attention-strong {
             grid-column: 1/-1;

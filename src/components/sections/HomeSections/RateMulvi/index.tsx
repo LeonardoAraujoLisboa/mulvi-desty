@@ -273,7 +273,7 @@ const RateMulvi = () => {
             </WrapperInput>
           </SimulationData>
           <SimulationResults>
-            <TitleResults className='title'>Usando conta Desty:</TitleResults>
+            <TitleResults className='title'>Usando conta Desty</TitleResults>
             <ContainerResults>
               <ContentFlag>
                 <OptionTitle>No débito</OptionTitle>

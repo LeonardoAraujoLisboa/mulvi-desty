@@ -7,11 +7,13 @@ export const Container = styled.div`
     @media (min-width: 375px) {
         padding-top: 40px;
         padding-bottom: 40px;
+        margin-top: -1px;
     }
 
     @media (min-width: 1024px) {
         padding-top: 80px;
         padding-bottom: 80px;
+        margin-top: -1px;
     }
 
     @media (min-width: 1440px) {
@@ -20,6 +22,7 @@ export const Container = styled.div`
         padding-bottom: 187.5px;
         display: grid;
         justify-content: center;
+        margin-top: -1px;
     }
 `
 

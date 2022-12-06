@@ -20,7 +20,6 @@ const ContentCard = ({data, pageId}: BusinessCardProps) => {
         const newContents = data.filter((item) => {
             return item.id !== pageId
         })
-        console.log(newContents);
         
         setDataFormatted(newContents)
     }

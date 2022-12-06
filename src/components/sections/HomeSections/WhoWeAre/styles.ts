@@ -21,7 +21,7 @@ export const Container = styled.div`
 export const ContentWhoWeAre = styled.div`
     @media (min-width: 1440px) {
         display: flex;
-        gap: 145px;
+        gap: 72px;
         align-items: center;
     }
 `
@@ -130,6 +130,10 @@ export const SubTitle = styled.h1`
 
     @media (min-width: 1440px) {
         margin-bottom: 48px;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 47px;
+        max-width: 591px;
     }
 `
 

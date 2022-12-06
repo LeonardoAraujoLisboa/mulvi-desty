@@ -2,6 +2,10 @@ import styled from "styled-components";
 import ArrowDown from '../../../../assets/arrow-down.svg'
 
 export const Container = styled.div`
+    .accordion-item {
+        border: none;
+    }
+
      @media (min-width: 375px) {
         padding: 40px 16.5px 29px 16.5px;
 

@@ -56,6 +56,10 @@ export const SingleSolutionsImg = styled.img`
         }
 
         &.machine-bg {
+            display: none;
+        }
+
+        &.machine-bg-mobile {
             width: 100%;
         }
      }
@@ -66,7 +70,12 @@ export const SingleSolutionsImg = styled.img`
         }
 
         &.machine-bg {
+            display: block;
             width: auto;
+        }
+
+        &.machine-bg-mobile {
+            display: none;
         }
     }
 
@@ -76,7 +85,12 @@ export const SingleSolutionsImg = styled.img`
         }
 
         &.machine-bg {
+            display: block;
             width: 100%;
+        }
+
+        &.machine-bg-mobile {
+            display: none;
         }
     }
 `

@@ -9,10 +9,17 @@ export const ContentPage = styled.div`
 `
 
 export const ContentTitle = styled.div`
-
 `
 
 export const PageTitle = styled.p`
+    @media (min-width: 375px) {
+        text-align: center;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 27px;
+        margin-top: 140px;
+    }
+
     @media (min-width: 1024px) {
         margin-bottom: 60px;
         font-weight: 400;
@@ -20,6 +27,7 @@ export const PageTitle = styled.p`
         line-height: 36px;
         color: ${({theme}) => theme.colors.text_secundary};
         text-align: center;
+        margin-top: 140px;
     }
 
     @media (min-width: 1440px) {
@@ -34,6 +42,14 @@ export const PageTitle = styled.p`
 
 export const Title = styled.h4`
     font-family: 'Elizeth Regular', Arial, Helvetica, sans-serif;
+
+    @media (min-width: 375px) {
+        text-align: center;
+        margin: auto;
+        margin-bottom: 16px;
+        max-width: 375px;
+    }
+
     @media (min-width: 1024px) {
         font-weight: 400;
         font-size: 48px;
@@ -43,7 +59,7 @@ export const Title = styled.h4`
         margin-bottom: 16px;
         padding-left: 46px;
         padding-right: 46px;
-        
+        max-width: fit-content;
     }
 
     @media (min-width: 1440px) {
@@ -53,13 +69,23 @@ export const Title = styled.h4`
         text-align: center;
         color: ${({theme}) => theme.colors.text_menu};
         margin-bottom: 16px;
-        padding-left: 254px;
-        padding-right: 254px;
-        max-width: 1361px;
+        padding-left: 176px;
+        padding-right: 176px;
+        max-width: 1370px;
     }
 `
 
 export const Subtitle = styled.div`
+    @media (min-width: 375px) {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        max-width: 347px;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+
     @media (min-width: 1024px) {
         font-weight: 400;
         font-size: 24px;
@@ -102,13 +128,16 @@ export const WrapperBanner = styled.div`
 
 export const ContentBanner = styled.img`
     border-radius: 16px;
-    
-    @media (min-width: 1024px) {
-        width: 100%;
-    }
+    width: 100%;
 `
 
 export const ContentInfo = styled.div`
+    @media (min-width: 375px) {
+        max-width: 343px;
+        margin: auto;
+        margin-top: 40px;
+    }
+
     @media (min-width: 1024px) {
         margin-bottom: 80px;
         margin: auto;
@@ -190,6 +219,13 @@ export const ListItem = styled.li`
 
 
 export const Divider = styled.div`
+    @media (min-width: 375px) {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        background-color: ${({theme}) => theme.colors.border_color};
+        height: 1px;
+    }
+
     @media (min-width: 1024px) {
         margin-top: 40px;
         margin-bottom: 40px;
@@ -212,6 +248,14 @@ export const MoreContents = styled.div`
 `
 
 export const TitleMoreContent = styled.p`
+    @media (min-width: 375px) {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 34px;
+        color: ${({theme}) => theme.colors.text_secundary};
+        margin-bottom: 40px
+    }
+
     @media (min-width: 1024px) {
         font-weight: 400;
         font-size: 24px;

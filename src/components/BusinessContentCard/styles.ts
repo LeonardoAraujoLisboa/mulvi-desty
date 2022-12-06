@@ -48,6 +48,7 @@ export const ContentCard = styled.div`
     .card {
         transition: 0.3s;
         width: 302px;
+        border: none;
     }
 
     .card:hover {
